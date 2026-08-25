@@ -4,6 +4,47 @@
     box-sizing: border-box;
 }
 
+/* --- PRELOADER OVERLAY STYLING --- */
+#page-loader {
+    position: fixed;
+    inset: 0;
+    background-color: #f5f7fb; /* Matches your website's background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Ensures it stays on top of all other elements */
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Class to hide the loader once the page loads */
+#page-loader.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* --- YOUR CUSTOM LOADER CSS --- */
+.loader {
+    width: fit-content;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 30px;
+    background: radial-gradient(circle closest-side,#081d88 94%,#00000000) right/calc(200% - 1em) 100%;
+    animation: l24 1s infinite alternate linear;
+}
+
+.loader::before {
+    content: "Loading...";
+    line-height: 1em;
+    color: #0000;
+    background: inherit;
+    background-image: radial-gradient(circle closest-side,#fff 94%,#000);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@keyframes l24 {
+    100% { background-position: left; }
+}
 /* TOP INFORMATION BAR*/
 
 .top-bar {
@@ -142,7 +183,7 @@ body {
 }
 
 header {
-    background-color: white;
+    background-color: rgb(249, 249, 250);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -156,6 +197,7 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px 20px;
+    position: relative;
 }
 
 nav ul {
@@ -198,6 +240,66 @@ nav li a:hover {
 
 .button-contact:hover{
     color:antiquewhite;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.menu-toggle span {
+    width: 100%;
+    height: 3px;
+    background-color: #160e6f;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {display:flex;
+    }
+
+
+/* Hide the navigation list by default on mobile */
+    nav ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        
+        /* Hidden state setup */
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 20px;/*Zero verticle padding when closed*/
+        transition: max-height 0.4s ease-in-out, padding 0.4s ease;
+    }
+
+    nav ul.active {
+        max-height: 400px; /* Adjust if you have more items */
+        padding: 20px;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav li a {
+        width: 100%;
+        padding: 10px 0;
+    }
 }
 
 .hero-section {
@@ -654,7 +756,151 @@ textarea.form-control {
 
 /*Footer*/
 
-.footer-logo-social{
-    height: 40px;
+footer {
+    background-color: #0b1f4b;
+    /* Layer your custom dot pattern over a smooth gradient background */
+    background-image: 
+        radial-gradient(rgba(255, 255, 255, 0.15) 1.5px, transparent 1.5px), 
+        radial-gradient(rgba(255, 255, 255, 0.15) 1.5px, #0b1f4b 1.5px),
+        linear-gradient(135deg, #0b1f4b 0%, #1d1296 100%);
+    
+    /* Sets the spacing grid size for the dots */
+    background-size: 20px 20px; 
+    
+    /* Offsets the second dot layer to create the diagonal polka-dot look */
+    background-position: 0 0, 10px 10px;
+    
+    color: white;
+    padding-top: 60px;
+    margin-top: 50px;
+}
+
+ .footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+ }
+
+ .footer-col{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+ }
+
+.footer-logo{
+    height: 60px;
     width: auto ;
+    object-fit: contain;
+
+}
+ 
+ .footer-slogan {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #b5c4df;
+ }
+
+  .footer-col svg{
+    width: 24px;
+    height: 24px;
+    fill: #66c7ff;
+    transform: 0.3s ease;
+}
+
+.footer-col svg:hover{
+    fill: #ffffff;
+    transform: scale(1.1);
+}
+
+.footer-social {
+    margin-top: 5px;
+    gap: 20px;
+}
+
+ .footer-heading {
+    font-size: 18px;
+    font-weight: 600;
+    color: #66c7ff;
+ }
+
+ .footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+
+ .footer-links a {
+    color: #d6dde4;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+ }
+
+ .footer-links a  :hover {
+    color: #66c7ff;
+    padding-left: 5px;
+    text-decoration: underline;
+ }
+
+ .footer-contact-heading {
+    color: #66c7ff;
+    font-size: 18px;
+ }
+
+ .footer-contact-heading p {
+    color: #dee4ea;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+ }
+
+ .footer-text{
+    color: #719dc9;
+    font-size: 14px;
+    line-height: 1;
+ }
+
+ .footer-bottom {
+    background-color: #071534;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    color: #8fa3cc;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+ }
+
+ @media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-bottom: 30px;
+    }
+ }
+
+ /*----------------------------------------------About Page--------------------------------------------------*/
+
+.about-hero{
+    position: relative;
+    background: linear-gradient(135deg, rgba(11, 37, 69, 0.9), rgba(16, 55, 102, 0.85)), url('./lab-bg.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    padding: 90px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 380px;
+}
+
+.about-hero .breadcrumb {
+    font-size: 14px;
+    color: #9ab4d6;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
