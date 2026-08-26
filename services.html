@@ -1,190 +1,1307 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>TPL-Transdical pvt. Ltd.</title>
+    <link rel="stylesheet" href="./services.css">
+    <title>Services - Transdical Pvt. Ltd.</title>
 </head>
+
 <body>
-  <div id="page-loader">
-    <div class="loader"></div>
-  </div>
-  <script>
-    window.addEventListener('load', () => {
-        const loader = document.getElementById('page-loader');
-        // Adds the fade-out class after the page loads
-        loader.classList.add('fade-out');
-    });
-</script>
 
-  <section class="top-bar">
-    <div class="container top-bar-content">
-      <div class="top-bar-left">
-        <div class="top-bar-item">
-          <!-- Check Shield SVG -->
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-            <path d="m9 11 2 2 4-4" />
-          </svg>
-          <span>ISO/IEC 17025:2017 Accredited Laboratory</span>
+    <!-- ================= PAGE LOADER ================= -->
+    <div id="page-loader">
+        <div class="loader"></div>
+    </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('page-loader');
+            loader.classList.add('fade-out');
+        });
+    </script>
+
+
+    <!-- ================= TOP BAR ================= -->
+    <section class="top-bar">
+        <div class="container top-bar-content">
+
+            <div class="top-bar-left">
+
+                <div class="top-bar-item">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <path d="m9 11 2 2 4-4"/>
+                    </svg>
+                    <span>ISO/IEC 17025:2017 Accredited Laboratory</span>
+                </div>
+
+                <div class="top-bar-item">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="8" r="7"/>
+                        <path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"/>
+                    </svg>
+                    <span>NABL Accredited</span>
+                </div>
+
+            </div>
+
+
+            <div class="top-bar-right">
+
+                <a href="tel:+919876543210" class="top-bar-item">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2
+                        19.79 19.79 0 0 1-8.63-3.07
+                        19.5 19.5 0 0 1-6-6
+                        19.79 19.79 0 0 1-3.07-8.67
+                        A2 2 0 0 1 4.11 2h3
+                        a2 2 0 0 1 2 1.72
+                        12.84 12.84 0 0 0 .7 2.81
+                        2 2 0 0 1-.45 2.11L8.09 9.91
+                        a16 16 0 0 0 6 6l1.27-1.27
+                        a2 2 0 0 1 2.11-.45
+                        12.84 12.84 0 0 0 2.81.7
+                        A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    <span>+91 98765 43210</span>
+                </a>
+
+                <a href="mailto:info@Transdical Pvt. Ltd.abs.com" class="top-bar-item">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <rect width="20" height="16"
+                            x="2" y="4" rx="2"/>
+                        <path d="m22 7-8.97 5.7
+                        a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                    <span>info@Transdical Pvt. Ltd.abs.com</span>
+                </a>
+
+                <div class="social-links">
+
+                    <!-- LinkedIn -->
+                    <a href="#" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor"
+                                d="M19 0H5C2.2 0 0 2.2 0 5v14c0 2.8
+                                2.2 5 5 5h14c2.8 0 5-2.2
+                                5-5V5c0-2.8-2.2-5-5-5zM8 19H5V8h3v11z
+                                M6.5 6.5C5.7 6.5 5 5.8 5 5s.7-1.5
+                                1.5-1.5S8 4.2 8 5s-.7 1.5-1.5 1.5z
+                                M19 19h-3v-5.5c0-1.3 0-3-1.8-3
+                                -1.8 0-2.1 1.4-2.1 2.9V19H9V8h3v1.5
+                                c.4-.9 1.5-1.8 3.2-1.8
+                                3.4 0 3.8 2.2 3.8 5.1V19z"/>
+                        </svg>
+                    </a>
+
+                    <!-- Facebook -->
+                    <a href="#" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor"
+                                d="M13.5 8H16V4h-2.5C10.5 4 9 6
+                                9 9v2H6v4h3v7h4v-7h3l.5-4H13v-2
+                                c0-.6.3-1 1-1h-.5z"/>
+                        </svg>
+                    </a>
+
+                    <!-- YouTube -->
+                    <a href="#" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor"
+                                d="M23.5 6.2a3 3 0 0 0-2.1-2.1
+                                C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6
+                                A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12
+                                s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1
+                                c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5
+                                a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8
+                                s0-3.9-.5-5.8z"/>
+                            <path fill="#fff"
+                                d="M9.5 15.6V8.4L15.8 12z"/>
+                        </svg>
+                    </a>
+
+                </div>
+
+            </div>
+
         </div>
-        <div class="top-bar-item">
-          <!-- Award SVG -->
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="8" r="7" />
-            <path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12" />
-          </svg>
-          <span>NABL Accredited</span>
+    </section>
+
+
+    <!-- ================= NAVBAR ================= -->
+    <header>
+        <div class="navbar-container">
+
+            <nav aria-label="Main Navigationbar">
+
+                <a class="logo-image" href="./home.html">
+                    <img class="logo"
+                        src="./TT logo.png"
+                        alt="Transdical Pvt. Ltd. Logo">
+                </a>
+
+                <ul>
+
+                    <li>
+                        <a href="./home.html" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./about.html" class="nav-link">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./testing.html" class="nav-link">
+                            Task/Testing
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./industries.html" class="nav-link">
+                            Industries
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./services.html"
+                           class="nav-link active">
+                            Our Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./contact.html" class="nav-link">
+                            Contact Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./contact.html"
+                           class="button-contact">
+                            Request a Quote
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
         </div>
-      </div>
-      <div class="top-bar-right">
-        <a href="tel:+919876543210" class="top-bar-item" id="top-phone">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path
-              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-          </svg>
-          <span>+91 98765 43210</span>
-        </a>
-        <a href="mailto:info@ttplabs.com" class="top-bar-item" id="top-email">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <rect width="20" height="16" x="2" y="4" rx="2" />
-            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-          </svg>
-          <span>info@ttplabs.com</span>
-        </a>
-        <div class="social-links">
-          <a href="#" aria-label="LinkedIn" id="social-linkedin">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-            </svg>
-          </a>
-          <a href="#" aria-label="Facebook" id="social-facebook">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M9 8H7v3h2v9h3v-9h3.625L16 8h-4V7c0-.5.5-1 1-1h3V3h-3c-2.5 0-4 1.5-4 4v1z" />
-            </svg>
-          </a>
-          <a href="#" aria-label="YouTube" id="social-youtube">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.518 3.545 12 3.545 12 3.545s-7.518 0-9.388.508a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.87.508 9.388.508 9.388.508s7.518 0 9.388-.508a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>  
-<header>
-    <div class="navbar-container">
-        <nav aria-label="Main Navigationbar">
-            <a class="logo-image">
-                <img class="logo" src="./TT logo.png">
-            </a>
-            <ul>
-                <li><a href="./home.html" class="nav-link active">Home
-                </a></li>
-                 <li><a href="./about.html" class="nav-link">About Us
-                </a></li>
-                 <li><a href="./testing.html" class="nav-link">Task/Testing
-                </a></li>
-                <li><a href="./contact.html" class="nav-link">Contact Us
-                </a></li>
-                <li><a href="services.html" class="nav-link">Our Services
-                </a></li>
-                <li><a href="./industries.html" class="nav-link">Industries
-                </a></li>
-                <li><a href="contact.html" class="button-contact" id="button-request-quote">Request a Quote
-                </a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<footer>
-  <div class="footer-container">
-
-    <!--column 1 image and slogan-->
-    <div class="footer-col"><img class="footer-logo" src="./1.png" alt="Logo image">
-      <p class="footer-slogan">Precision in Every Test.<br/> Confidence in Every Result.</p>
-
-    <div class="footer-social">
-      <a href="#" aria-label="LinkedIn">
-        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-          <rect x="10" y="10" width="100" height="100" rx="20" fill="#0A66C2"/>
-           <g transform="translate(32,32) scale(2.33)">
-         <path fill="#fff" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/>
-           </g>
-        </svg>
-      </a>
-
-      <a href="#" aria-label="Email">
-         <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-           <circle cx="60" cy="60" r="50" fill="#EA4335"/>
-           <rect x="34" y="42" width="52" height="36" rx="4" fill="#fff"/>
-          <path d="M34 44l26 20 26-20" fill="none" stroke="#EA4335" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </a>
-
-      <a href="https://www.instagram.com/_priyanshu_writes?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw==" aria-label="Instagram">
-        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="igGrad" x1="0" y1="1" x2="1" y2="0">
-               <stop offset="0%" stop-color="#FEDA75"/>
-               <stop offset="25%" stop-color="#FA7E1E"/>
-               <stop offset="50%" stop-color="#D62976"/>
-               <stop offset="75%" stop-color="#962FBF"/>
-             <stop offset="100%" stop-color="#4F5BD5"/>
-           </linearGradient>
-          </defs>
-              <rect x="10" y="10" width="100" height="100" rx="24" fill="url(#igGrad)"/>
-              <rect x="30" y="30" width="60" height="60" rx="18" fill="none" stroke="#fff" stroke-width="6"/>
-              <circle cx="60" cy="60" r="16" fill="none" stroke="#fff" stroke-width="6"/>
-              <circle cx="80" cy="40" r="4" fill="#fff"/>
-        </svg>
-      </a>
-
-      <a href="https://www.youtube.com/channel/UC3k804Plo5VNAHGSx4cfPMA" aria-label="Youtube">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-             <path fill="#FF0000" d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.016 3.016 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.016 3.016 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/>
-              <path fill="#fff" d="M9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-        </svg>
-      </a>
-    </div>
-  </div>
-
-    <!--column 2 quick links-->
-    <div class="footer-col">
-      <h3 class="footer-heading">Quick Links</h3>
-      <ul class="footer-links">
-         <li><a href="./home.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./testing.html">Testing</a></li>
-          <li><a href="./industries.html">Industries</a></li>
-          <li><a href="./services.html">Services</a></li>
-         <li><a href="./contact.html">Contact</a></li>
-       </ul>
-    </div>
+    </header>
     
-    <!--column 3 address-->
-    <div class="footer-col">
-      <h3 class="footer-contact-heading">Contact info & Headquaters</h3>
-      <p class="footer-text">TTPL House, Sector-1, Panchkula, Haryana, India</p>
-      <p class="footer-text">info@ttplabs.com</p>
-      <p class="footer-text">+91 98765 43210 / +91 172 123456</p>
-    </div>
-    
-  </div>
+    <!-- ================================================= -->
+    <!--                     HERO                          -->
+    <!-- ================================================= -->
 
-    <!--column 4 copyright-->
-    <div class="footer-bottom">
-      <p>&copy; 2026 Transdical Pvt. Ltd. All Rights Reserved.</p></p>
+    <section class="services-hero">
+
+        <div class="services-hero-content">
+
+            <div class="breadcrumb">
+                Home &nbsp;›&nbsp; Services
+            </div>
+
+            <h1>Our Services</h1>
+
+            <h3>
+                Precise Testing. Reliable Results. Assured Quality.
+            </h3>
+
+            <p>
+                Transdical Pvt. Ltd. offers a comprehensive range of analytical testing,
+                laboratory consultancy and scientific solutions to meet
+                the diverse needs of industries, research organizations
+                and laboratories.
+            </p>
+
+        </div>
+
+        <div class="services-hero-image">
+            <img src="./lab images/services-hero.png"
+                 alt="Laboratory Testing">
+        </div>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!--                 CORE SERVICES                     -->
+    <!-- ================================================= -->
+
+    <section class="core-services">
+
+        <div class="section-heading">
+
+            <span></span>
+
+            <h2>Our Core Services</h2>
+
+            <span></span>
+
+        </div>
+
+
+        <div class="services-grid">
+
+
+            <!-- FOOD -->
+            <div class="service-card">
+
+                <div class="service-icon food-icon">
+
+                    <svg viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8">
+                        <path d="M7 2v8"/>
+                        <path d="M4 2v5a3 3 0 0 0 6 0V2"/>
+                        <path d="M7 10v12"/>
+                        <path d="M17 2v20"/>
+                        <path d="M17 2c3 2 3 7 0 9"/>
+                    </svg>
+
+                </div>
+
+                <h3>Food Testing</h3>
+
+                <ul>
+                    <li>Nutritional Analysis</li>
+                    <li>Microbiological Testing</li>
+                    <li>Chemical Contaminants</li>
+                    <li>Food Safety Testing</li>
+                    <li>Shelf Life Studies</li>
+                </ul>
+
+                <a href="./testing.html">
+                    Learn More
+                    <span>→</span>
+                </a>
+
+            </div>
+
+
+            <!-- DRUG -->
+            <div class="service-card">
+
+                <div class="service-icon drug-icon">
+
+                    <svg viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8">
+                        <rect x="4" y="8"
+                              width="16" height="8"
+                              rx="4"
+                              transform="rotate(-45 12 12)"/>
+                        <path d="m8 8 8 8"/>
+                    </svg>
+
+                </div>
+
+                <h3>Drug Testing</h3>
+
+                <ul>
+                    <li>API Analysis</li>
+                    <li>Raw Material Testing</li>
+                    <li>Impurity Profiling</li>
+                    <li>Dissolution Testing</li>
+                    <li>Stability Studies</li>
+                </ul>
+
+                <a href="./testing.html">
+                    Learn More <span>→</span>
+                </a>
+
+            </div>
+
+
+            <!-- PHARMA -->
+            <div class="service-card">
+
+                <div class="service-icon pharma-icon">
+
+                    <svg viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8">
+
+                        <path d="M7 3h10"/>
+                        <path d="M9 3v5l-4 7
+                                 a4 4 0 0 0 3.5 6h7
+                                 A4 4 0 0 0 19 15l-4-7V3"/>
+                        <path d="M8 14h8"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>Pharmaceutical Testing</h3>
+
+                <ul>
+                    <li>Method Development</li>
+                    <li>Method Validation</li>
+                    <li>Process Validation</li>
+                    <li>Stability Studies</li>
+                    <li>Impurity Analysis</li>
+                </ul>
+
+                <a href="./testing.html">
+                    Learn More <span>→</span>
+                </a>
+
+            </div>
+
+
+            <!-- LEATHER -->
+            <div class="service-card">
+
+                <div class="service-icon leather-icon">
+
+                    <svg viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8">
+
+                        <path d="M12 3
+                                 C8 5 5 6 5 10
+                                 c0 6 4 9 7 11
+                                 3-2 7-5 7-11
+                                 0-4-3-5-7-7z"/>
+
+                        <path d="M8 9c2 2 6 2 8 0"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>Leather & Textile Testing</h3>
+
+                <ul>
+                    <li>Restricted Substances</li>
+                    <li>Azo Dyes</li>
+                    <li>Phthalates</li>
+                    <li>DMFu Testing</li>
+                    <li>Color Fastness</li>
+                </ul>
+
+                <a href="./testing.html">
+                    Learn More <span>→</span>
+                </a>
+
+            </div>
+
+
+            <!-- ENVIRONMENT -->
+            <div class="service-card">
+
+                <div class="service-icon environment-icon">
+
+                    <svg viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8">
+
+                        <path d="M20 4
+                                 C11 4 5 8 5 15
+                                 c0 3 2 5 5 5
+                                 7 0 10-8 10-16z"/>
+
+                        <path d="M4 20
+                                 c3-5 7-8 13-10"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>Environmental Testing</h3>
+
+                <ul>
+                    <li>Water Analysis</li>
+                    <li>Waste Water Testing</li>
+                    <li>Soil Testing</li>
+                    <li>Air Quality Testing</li>
+                    <li>Noise Monitoring</li>
+                </ul>
+
+                <a href="./testing.html">
+                    Learn More <span>→</span>
+                </a>
+
+            </div>
+
+
+            <!-- CONSULTANCY -->
+            <div class="service-card">
+
+                <div class="service-icon consultancy-icon">
+
+                    <svg viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8">
+
+                        <circle cx="12" cy="7" r="4"/>
+                        <path d="M4 21
+                                 c0-4 3-7 8-7
+                                 s8 3 8 7"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>Laboratory Consultancy</h3>
+
+                <ul>
+                    <li>Laboratory Setup</li>
+                    <li>Method Development</li>
+                    <li>Validation & Verification</li>
+                    <li>Calibration Support</li>
+                    <li>Quality System Support</li>
+                </ul>
+
+                <a href="./contact.html">
+                    Learn More <span>→</span>
+                </a>
+
+            </div>
+
+
+            <!-- TRAINING -->
+            <div class="service-card">
+
+                <div class="service-icon training-icon">
+
+                    <svg viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8">
+
+                        <path d="M3 5h18v12H3z"/>
+                        <path d="M8 21h8"/>
+                        <path d="M12 17v4"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>Scientific Training</h3>
+
+                <ul>
+                    <li>LC-MS/MS Training</li>
+                    <li>GC-MS Training</li>
+                    <li>HPLC Training</li>
+                    <li>ICP-OES Training</li>
+                    <li>Hands-on Experience</li>
+                </ul>
+
+                <a href="./contact.html">
+                    Learn More <span>→</span>
+                </a>
+
+            </div>
+
+
+            <!-- CONSUMABLES -->
+            <div class="service-card">
+
+                <div class="service-icon consumable-icon">
+
+                    <svg viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8">
+
+                        <circle cx="9" cy="20" r="1"/>
+                        <circle cx="18" cy="20" r="1"/>
+
+                        <path d="M3 4h2l2.5 11h10
+                                 l3-8H6"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>Laboratory Consumables</h3>
+
+                <ul>
+                    <li>Reference Standards</li>
+                    <li>Chemicals & Reagents</li>
+                    <li>Glassware</li>
+                    <li>Columns & Consumables</li>
+                    <li>Lab Accessories</li>
+                </ul>
+
+                <a href="./contact.html">
+                    Learn More <span>→</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!--                 WHY CHOOSE Transdical Pvt. Ltd.                   -->
+    <!-- ================================================= -->
+
+    <section class="why-choose">
+
+        <div class="section-heading">
+            <span></span>
+            <h2>Why Choose Transdical Pvt. Ltd.?</h2>
+            <span></span>
+        </div>
+
+
+        <div class="why-grid">
+
+            <div class="why-item">
+
+                <svg viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7">
+                    <path d="M12 2l8 4v6
+                             c0 5-3.5 8.5-8 10
+                             -4.5-1.5-8-5-8-10V6z"/>
+                    <path d="m8 12 2 2 5-5"/>
+                </svg>
+
+                <h3>NABL & ISO 17025</h3>
+                <p>Accredited Laboratory</p>
+
+            </div>
+
+
+            <div class="why-item">
+
+                <svg viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7">
+                    <rect x="3" y="4"
+                          width="18" height="16"
+                          rx="2"/>
+                    <path d="M7 8h10"/>
+                    <path d="M7 12h10"/>
+                    <path d="M7 16h6"/>
+                </svg>
+
+                <h3>Advanced Instruments</h3>
+                <p>& Technology</p>
+
+            </div>
+
+
+            <div class="why-item">
+
+                <svg viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7">
+
+                    <circle cx="9" cy="8" r="4"/>
+                    <circle cx="17" cy="9" r="3"/>
+                    <path d="M2 21c0-4 3-7 7-7s7 3 7 7"/>
+                    <path d="M15 14c4 0 7 3 7 7"/>
+
+                </svg>
+
+                <h3>Experienced &</h3>
+                <p>Qualified Experts</p>
+
+            </div>
+
+
+            <div class="why-item">
+
+                <svg viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7">
+
+                    <circle cx="12" cy="12" r="9"/>
+                    <path d="m8 12 3 3 5-6"/>
+
+                </svg>
+
+                <h3>Accurate & Reliable</h3>
+                <p>Test Results</p>
+
+            </div>
+
+
+            <div class="why-item">
+
+                <svg viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7">
+
+                    <circle cx="12" cy="12" r="9"/>
+                    <path d="M12 7v5l3 2"/>
+
+                </svg>
+
+                <h3>Fast Turnaround</h3>
+                <p>Time</p>
+
+            </div>
+
+
+            <div class="why-item">
+
+                <svg viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7">
+
+                    <path d="M12 2
+                             l8 4v6
+                             c0 5-3.5 8.5-8 10
+                             -4.5-1.5-8-5-8-10V6z"/>
+
+                    <rect x="9" y="10"
+                          width="6" height="5"
+                          rx="1"/>
+
+                    <path d="M10 10V8
+                             a2 2 0 0 1 4 0v2"/>
+
+                </svg>
+
+                <h3>Confidential & Secure</h3>
+                <p>Process</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!--                 TESTING PROCESS                   -->
+    <!-- ================================================= -->
+
+    <section class="testing-process">
+
+        <div class="section-heading">
+
+            <span></span>
+            <h2>Our Testing Process</h2>
+            <span></span>
+
+        </div>
+
+
+        <div class="process-grid">
+
+
+            <div class="process-item">
+
+                <div class="process-icon">
+
+                    <svg viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7">
+
+                        <path d="M4 7l8-4 8 4-8 4z"/>
+                        <path d="M4 7v10l8 4 8-4V7"/>
+                        <path d="M12 11v10"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>Sample Collection</h3>
+
+                <p>
+                    Samples are collected according to
+                    standard guidelines.
+                </p>
+
+            </div>
+
+
+            <div class="process-arrow">→</div>
+
+
+            <div class="process-item">
+
+                <div class="process-icon">
+
+                    <svg viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7">
+
+                        <rect x="5" y="3"
+                              width="14" height="18"
+                              rx="2"/>
+
+                        <path d="M8 8h8"/>
+                        <path d="M8 12h8"/>
+                        <path d="M8 16h5"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>Sample Registration</h3>
+
+                <p>
+                    Samples are logged into our
+                    LIMS for unique tracking.
+                </p>
+
+            </div>
+
+
+            <div class="process-arrow">→</div>
+
+
+            <div class="process-item">
+
+                <div class="process-icon">
+
+                    <svg viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7">
+
+                        <circle cx="9" cy="9" r="4"/>
+                        <path d="M13 13l7 7"/>
+                        <path d="M4 21h10"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>Testing / Analysis</h3>
+
+                <p>
+                    Advanced instruments are used
+                    for precise analysis.
+                </p>
+
+            </div>
+
+
+            <div class="process-arrow">→</div>
+
+
+            <div class="process-item">
+
+                <div class="process-icon">
+
+                    <svg viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7">
+
+                        <circle cx="12" cy="8" r="6"/>
+                        <path d="M8 14l-2 8 6-3 6 3-2-8"/>
+                        <path d="m9 8 2 2 4-4"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>Quality Verification</h3>
+
+                <p>
+                    Results are reviewed and verified
+                    by qualified experts.
+                </p>
+
+            </div>
+
+
+            <div class="process-arrow">→</div>
+
+
+            <div class="process-item">
+
+                <div class="process-icon">
+
+                    <svg viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7">
+
+                        <path d="M5 3h14v18H5z"/>
+                        <path d="M8 7h8"/>
+                        <path d="M8 11h8"/>
+                        <path d="M8 15h5"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>Report Generation</h3>
+
+                <p>
+                    Accurate reports are generated
+                    and delivered.
+                </p>
+
+            </div>
+
+
+            <div class="process-arrow">→</div>
+
+
+            <div class="process-item">
+
+                <div class="process-icon">
+
+                    <svg viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.7">
+
+                        <path d="M6 9a6 6 0 0 1 12 0v6
+                                 a6 6 0 0 1-12 0z"/>
+
+                        <path d="M3 12v3"/>
+                        <path d="M21 12v3"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>Technical Support</h3>
+
+                <p>
+                    Expert support for queries
+                    or assistance.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!--                 INDUSTRIES                        -->
+    <!-- ================================================= -->
+
+    <section class="industries-section">
+
+        <div class="section-heading">
+
+            <span></span>
+            <h2>Industries We Serve</h2>
+            <span></span>
+
+        </div>
+
+
+        <div class="industries-grid">
+
+            <div class="industry-item">
+
+                <svg viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7">
+                    <path d="M7 3v18"/>
+                    <path d="M17 3v18"/>
+                    <path d="M7 7h10"/>
+                    <path d="M7 12h10"/>
+                </svg>
+
+                <span>Food & Beverages</span>
+
+            </div>
+
+
+            <div class="industry-item">
+
+                <svg viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7">
+
+                    <path d="M6 20V8l6-5 6 5v12"/>
+                    <path d="M9 20v-6h6v6"/>
+
+                </svg>
+
+                <span>Pharmaceuticals</span>
+
+            </div>
+
+
+            <div class="industry-item">
+
+                <svg viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7">
+
+                    <path d="M9 3h6"/>
+                    <path d="M10 3v5l-4 9
+                             a3 3 0 0 0 3 4h6
+                             a3 3 0 0 0 3-4l-4-9V3"/>
+
+                </svg>
+
+                <span>Drugs & API</span>
+
+            </div>
+
+
+            <div class="industry-item">
+
+                <svg viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7">
+
+                    <path d="M12 3
+                             c-4 2-7 4-7 8
+                             0 5 3 8 7 10
+                             4-2 7-5 7-10
+                             0-4-3-6-7-8z"/>
+
+                </svg>
+
+                <span>Leather Industry</span>
+
+            </div>
+
+
+            <div class="industry-item">
+
+                <svg viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7">
+
+                    <path d="M5 5h14"/>
+                    <path d="M7 5v14"/>
+                    <path d="M17 5v14"/>
+                    <path d="M5 19h14"/>
+
+                </svg>
+
+                <span>Textile Industry</span>
+
+            </div>
+
+
+            <div class="industry-item">
+
+                <svg viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7">
+
+                    <path d="M20 4
+                             C11 4 5 8 5 15
+                             c0 3 2 5 5 5
+                             7 0 10-8 10-16z"/>
+
+                    <path d="M4 20c3-5 7-8 13-10"/>
+
+                </svg>
+
+                <span>Environmental</span>
+
+            </div>
+
+
+            <div class="industry-item">
+
+                <svg viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7">
+
+                    <path d="M9 3h6"/>
+                    <path d="M10 3v6l-4 8
+                             a3 3 0 0 0 3 4h6
+                             a3 3 0 0 0 3-4l-4-8V3"/>
+
+                </svg>
+
+                <span>Cosmetics</span>
+
+            </div>
+
+
+            <div class="industry-item">
+
+                <svg viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7">
+
+                    <path d="M4 21h16"/>
+                    <path d="M6 21V7h12v14"/>
+                    <path d="M9 7V3h6v4"/>
+                    <path d="M9 11h2"/>
+                    <path d="M13 11h2"/>
+                    <path d="M9 15h2"/>
+                    <path d="M13 15h2"/>
+
+                </svg>
+
+                <span>Research Institutes</span>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!--                     CTA                           -->
+    <!-- ================================================= -->
+
+    <section class="services-cta">
+
+        <div class="cta-content">
+
+            <h2>
+                Need a Customized Testing Solution?
+            </h2>
+
+            <p>
+                Our experts are ready to understand your
+                requirements and provide the best analytical
+                solution for your business.
+            </p>
+
+        </div>
+
+        <a href="./contact.html" class="cta-button">
+            Get a Free Quote
+
+            <svg viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2">
+                <path d="M5 12h14"/>
+                <path d="m13 6 6 6-6 6"/>
+            </svg>
+
+        </a>
+
+    </section>
+<!-- SERVICE INFORMATION POPUP -->
+
+<div class="service-modal" id="serviceModal">
+
+    <div class="service-modal-card">
+
+        <button class="modal-close" id="modalClose" aria-label="Close">
+            &times;
+        </button>
+
+        <div class="modal-icon">
+            <svg viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor"
+                 stroke-width="1.8"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+
+                <path d="M9 3h6"></path>
+                <path d="M10 3v4l-4.5 8.5A3 3 0 0 0 8.2 20h7.6a3 3 0 0 0 2.7-4.5L14 7V3"></path>
+                <path d="M8 14h8"></path>
+
+            </svg>
+        </div>
+
+        <h2 id="modalTitle">Food Testing</h2>
+
+        <p class="modal-description">
+            Our analytical testing services help ensure product
+            quality, safety, regulatory compliance, and reliability.
+        </p>
+
+        <div class="modal-services">
+            <h4>Our Services Include</h4>
+
+            <ul id="modalList"></ul>
+        </div>
+
+        <a href="./contact.html" class="modal-contact-btn">
+            Request a Quote
+            <span>→</span>
+        </a>
+
     </div>
 
-</footer>
+</div>
+
+    <!-- ================================================= -->
+    <!--                     FOOTER                        -->
+    <!-- ================================================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-col">
+
+                <img class="footer-logo"
+                     src="./1.png"
+                     alt="Logo image">
+
+                <p class="footer-slogan">
+                    Precision in Every Test.<br>
+                    Confidence in Every Result.
+                </p>
+
+                <div class="footer-social">
+
+                    <a href="#" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M19 0H5C2.2 0 0 2.2 0 5v14c0 2.8
+                                2.2 5 5 5h14c2.8 0 5-2.2 5-5V5
+                                c0-2.8-2.2-5-5-5zM8 19H5V8h3v11z
+                                M6.5 6.5C5.7 6.5 5 5.8 5 5s.7-1.5
+                                1.5-1.5S8 4.2 8 5s-.7 1.5-1.5 1.5z
+                                M19 19h-3v-5.5c0-1.3 0-3-1.8-3
+                                -1.8 0-2.1 1.4-2.1 2.9V19H9V8h3v1.5
+                                c.4-.9 1.5-1.8 3.2-1.8
+                                3.4 0 3.8 2.2 3.8 5.1V19z"/>
+                        </svg>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M13.5 8H16V4h-2.5C10.5 4 9 6
+                                9 9v2H6v4h3v7h4v-7h3l.5-4H13v-2
+                                c0-.6.3-1 1-1h-.5z"/>
+                        </svg>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2">
+
+                            <rect x="3" y="3"
+                                  width="18" height="18"
+                                  rx="5"/>
+
+                            <circle cx="12" cy="12" r="4"/>
+
+                            <circle cx="17.5" cy="6.5"
+                                    r="1"/>
+
+                        </svg>
+                    </a>
+
+                    <a href="#" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M23.5 6.2a3 3 0 0 0-2.1-2.1
+                                C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6
+                                A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12
+                                s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1
+                                c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5
+                                a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8
+                                s0-3.9-.5-5.8z"/>
+                            <path fill="#fff"
+                                d="M9.5 15.6V8.4L15.8 12z"/>
+                        </svg>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-col">
+
+                <h3 class="footer-heading">
+                    Quick Links
+                </h3>
+
+                <ul class="footer-links">
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./testing.html">Testing</a></li>
+                    <li><a href="./industries.html">Industries</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="footer-col">
+
+                <h3 class="footer-contact-heading">
+                    Contact Info & Headquarters
+                </h3>
+
+                <p class="footer-text">
+                    Transdical Pvt. Ltd. House, Sector-1,
+                    Panchkula, Haryana, India
+                </p>
+
+                <p class="footer-text">
+                    info@Transdical Pvt. Ltd.abs.com
+                </p>
+
+                <p class="footer-text">
+                    +91 98765 43210 /
+                    +91 172 123456
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Transdical Pvt. Ltd.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
 </body>
 </html>
