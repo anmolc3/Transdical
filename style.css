@@ -264,63 +264,108 @@ nav li a.active::after {
     color:antiquewhite;
 }
 
+/* =========================================================
+   MOBILE HAMBURGER & NAVIGATION MENU
+   ========================================================= */
+
 .menu-toggle {
     display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
-    height: 21px;
+    height: 22px;
     background: transparent;
     border: none;
     cursor: pointer;
     padding: 0;
-    z-index: 1001;
+    z-index: 10001;
 }
 
 .menu-toggle span {
     width: 100%;
     height: 3px;
-    background-color: #160e6f;
+    background-color: #0b1f4b;
     border-radius: 3px;
-    transition: 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    transform-origin: center;
 }
 
-@media (max-width: 768px) {
-    .menu-toggle {display:flex;
+/* Morph to 'X' when active */
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(9.5px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-9.5px) rotate(-45deg);
+}
+
+@media (max-width: 900px) {
+    .menu-toggle {
+        display: flex;
     }
 
-
-/* Hide the navigation list by default on mobile */
     nav ul {
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: white;
+        background-color: #ffffff;
         flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-        
-        /* Hidden state setup */
+        align-items: stretch;
+        padding: 0 24px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
         max-height: 0;
         overflow: hidden;
-        padding: 0 20px;/*Zero verticle padding when closed*/
-        transition: max-height 0.4s ease-in-out, padding 0.4s ease;
+        visibility: hidden;
+        opacity: 0;
+        transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, padding 0.3s ease, visibility 0.4s ease;
+        z-index: 10000;
+        border-bottom: 2px solid #0284c7;
+        box-sizing: border-box;
     }
 
     nav ul.active {
-        max-height: 400px; /* Adjust if you have more items */
-        padding: 20px;
+        max-height: 520px;
+        padding: 20px 24px 28px;
+        visibility: visible;
+        opacity: 1;
     }
 
     nav ul li {
         width: 100%;
+        margin: 4px 0;
     }
 
     nav li a {
+        display: block;
         width: 100%;
-        padding: 10px 0;
+        padding: 10px 14px;
+        font-size: 15px;
+        font-weight: 600;
+        color: #0f172a;
+        border-radius: 8px;
+        transition: all 0.2s ease;
+    }
+
+    nav li a:hover,
+    nav li a.active {
+        background-color: #f0f9ff;
+        color: #0284c7;
+    }
+
+    nav li a.button-contact {
+        margin-top: 10px;
+        text-align: center;
+        background: #0284c7;
+        color: #ffffff !important;
+        display: block;
+        width: 100%;
+        padding: 12px 16px;
     }
 }
 

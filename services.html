@@ -107,6 +107,11 @@
                 <a class="logo-image" href="./home.html">
                     <img class="logo" src="./TT logo.png" alt="Transdical Pvt. Ltd. Logo">
                 </a>
+        <button class="menu-toggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
                 <ul>
 
@@ -1098,6 +1103,43 @@
 
     </footer>
 
+<!-- Mobile Menu Navigation Toggle Script -->
+  <script>
+    (function() {
+      function initMobileMenu() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navUl = document.querySelector('nav ul');
+        if (!menuToggle || !navUl) return;
+
+        menuToggle.addEventListener('click', function(e) {
+          e.stopPropagation();
+          menuToggle.classList.toggle('active');
+          navUl.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+          if (!navUl.contains(e.target) && !menuToggle.contains(e.target)) {
+            menuToggle.classList.remove('active');
+            navUl.classList.remove('active');
+          }
+        });
+
+        // Close menu when link is clicked
+        navUl.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            menuToggle.classList.remove('active');
+            navUl.classList.remove('active');
+          });
+        });
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initMobileMenu);
+      } else {
+        initMobileMenu();
+      }
+    })();
+  </script>
 </body>
 
 </html>
