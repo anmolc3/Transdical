@@ -471,46 +471,76 @@ nav li a.active::after {
     background: linear-gradient(135deg, #00f2fe 0%, #38bdf8 50%, #60a5fa 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     text-align: left;
 }
 
 .hero-title2 {
     font-family: 'Outfit', sans-serif;
     color: #ffffff;
-    font-size: 58px;
-    line-height: 1.1;
+    font-size: 56px;
+    line-height: 1.15;
     font-weight: 700;
     letter-spacing: -0.5px;
     margin-bottom: 20px;
     text-align: left;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 0;
-    border-right: 3px solid #38bdf8;
-
-    animation:
-        typing 3s steps(29, end) infinite,
-        blink 0.7s step-end infinite;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-@keyframes typing {
-    0% {
-        width: 0;
-    }
-
-    80% {
-        width: 100%;
-    }
-
-    100% {
-        width: 0;
-    }
+.typewriter-cursor {
+    display: inline-block;
+    width: 3.5px;
+    height: 0.85em;
+    background-color: #38bdf8;
+    margin-left: 6px;
+    vertical-align: middle;
+    border-radius: 1px;
+    box-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
+    animation: blinkCursor 0.75s step-end infinite;
 }
 
-@keyframes blink {
+@keyframes blinkCursor {
+    0%, 100% {
+        opacity: 1;
+    }
     50% {
-        border-color: transparent;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-title1 {
+        font-size: 48px;
+    }
+    .hero-title2 {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title1 {
+        font-size: 34px;
+    }
+    .hero-title2 {
+        font-size: 28px;
+    }
+    .typewriter-cursor {
+        width: 3px;
+        height: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title1 {
+        font-size: 28px;
+    }
+    .hero-title2 {
+        font-size: 22px;
+    }
+    .typewriter-cursor {
+        width: 2.5px;
     }
 }
 

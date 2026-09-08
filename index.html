@@ -106,12 +106,11 @@
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-container">
-      <h1 class="hero-title1">Precision in Every Test.</h1>
-      <h1 class="hero-title2">Confidence in Every Result.</h1>
-      <p class="hero-subtitle">ISO/IEC 17025:2017 & NABL Accredited Laboratory Network</p>
-      <p class="hero-description">Transdical Technologies Pvt. Ltd. is a premier laboratory network delivering advanced scientific
-        testing, trace analysis, parameter certification, and training solutions across food, pharma, textile, and
-        environmental sectors.</p>
+      <h1 class="hero-title1">Precision Engineering</h1>
+      <h2 class="hero-title2"><span id="typewriter-text">&amp; Scientific Solutions</span><span class="typewriter-cursor" aria-hidden="true"></span></h2>
+      <p class="hero-description"> Transdical Technologies Pvt. Ltd. is a premier laboratory network delivering advanced scientific
+        testing, trace analysis across food & beverages, pharma & drug, leather & textile, soil &
+        environmental and toys sectors. </p>
       <div class="hero-button">
         <a href="./services.html" class="hero-button-services">Our Services</a>
         <a href="./contact.html" class="hero-button-contact">Get in Touch</a>
@@ -825,7 +824,8 @@
         <p class="footer-text">Transdical Technologies Pvt. Ltd. House, Sector-1, Panchkula, Haryana, India</p>
         <p class="footer-text"><a href="mailto:bd@transdica.com"
             style="color: inherit; text-decoration: none;">bd@transdica.com</a></p>
-        <p class="footer-text"><a href="tel:+918130030220" style="color: inherit; text-decoration: none;">+91 8130030220</a></p>
+        <p class="footer-text"><a href="tel:+918130030220" style="color: inherit; text-decoration: none;">+91
+            8130030220</a></p>
       </div>
     </div>
 
@@ -1034,6 +1034,40 @@
       } else {
         initMobileMenu();
       }
+    })();
+  </script>
+
+  <!-- Hero Typewriter Script: Cursor Stays Flush With Text -->
+  <script>
+    (function () {
+      const text = "& Scientific Solutions";
+      const target = document.getElementById('typewriter-text');
+      if (!target) return;
+
+      let idx = text.length;
+      let isDeleting = true;
+
+      setTimeout(function loop() {
+        if (isDeleting) {
+          idx--;
+          target.textContent = text.substring(0, idx);
+          if (idx === 0) {
+            isDeleting = false;
+            setTimeout(loop, 600);
+            return;
+          }
+          setTimeout(loop, 45);
+        } else {
+          idx++;
+          target.textContent = text.substring(0, idx);
+          if (idx === text.length) {
+            isDeleting = true;
+            setTimeout(loop, 3000);
+            return;
+          }
+          setTimeout(loop, 85);
+        }
+      }, 2500);
     })();
   </script>
 </body>
