@@ -92,7 +92,7 @@
           <span></span>
         </button>
         <ul>
-          <li><a href="./home.html" class="nav-link">Home</a></li>
+          <li><a href="./index.html" class="nav-link">Home</a></li>
           <li><a href="./about.html" class="nav-link active">About Us</a></li>
           <li><a href="./testing.html" class="nav-link">Tasks / Testing</a></li>
           <li><a href="./solutions.html" class="nav-link">Our Solutions</a></li>
@@ -453,7 +453,8 @@
         <div class="footer-social">
           <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-              <path d="M19 0H5C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM8 19H5V8h3v11zM6.5 6.5C5.7 6.5 5 5.8 5 5s.7-1.5 1.5-1.5S8 4.2 8 5s-.7 1.5-1.5 1.5zM19 19h-3v-5.5c0-1.3 0-3-1.8-3-1.8 0-2.1 1.4-2.1 2.9V19H9V8h3v1.5c.4-.9 1.5-1.8 3.2-1.8 3.4 0 3.8 2.2 3.8 5.1V19z" />
+              <path
+                d="M19 0H5C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM8 19H5V8h3v11zM6.5 6.5C5.7 6.5 5 5.8 5 5s.7-1.5 1.5-1.5S8 4.2 8 5s-.7 1.5-1.5 1.5zM19 19h-3v-5.5c0-1.3 0-3-1.8-3-1.8 0-2.1 1.4-2.1 2.9V19H9V8h3v1.5c.4-.9 1.5-1.8 3.2-1.8 3.4 0 3.8 2.2 3.8 5.1V19z" />
             </svg>
           </a>
         </div>
@@ -463,7 +464,7 @@
       <div class="footer-col">
         <h3 class="footer-heading">Quick Links</h3>
         <ul class="footer-links">
-          <li><a href="./home.html">Home</a></li>
+          <li><a href="./index.html">Home</a></li>
           <li><a href="./about.html">About Us</a></li>
           <li><a href="./testing.html">Tasks / Testing</a></li>
           <li><a href="./solutions.html">Our Solutions</a></li>
@@ -489,8 +490,10 @@
       <div class="footer-col">
         <h3 class="footer-contact-heading">Contact Info & Headquarters</h3>
         <p class="footer-text">Transdical Pvt. Ltd. House, Sector-1, Panchkula, Haryana, India</p>
-        <p class="footer-text"><a href="mailto:Dd@ttpl.com" style="color: inherit; text-decoration: none;">Dd@ttpl.com</a></p>
-        <p class="footer-text"><a href="tel:+917417038116" style="color: inherit; text-decoration: none;">+91 74170 38116</a></p>
+        <p class="footer-text"><a href="mailto:Dd@ttpl.com"
+            style="color: inherit; text-decoration: none;">Dd@ttpl.com</a></p>
+        <p class="footer-text"><a href="tel:+917417038116" style="color: inherit; text-decoration: none;">+91 74170
+            38116</a></p>
       </div>
     </div>
 
@@ -500,7 +503,7 @@
     </div>
   </footer>
 
-  
+
   <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
   <a href="https://wa.me/917417038116?text=Hello%20Transdical%20Laboratory%20Team%2C%20I%20would%20like%20to%20book%20a%20test."
     class="whatsapp-float-btn" target="_blank" rel="noopener noreferrer" aria-label="Book a Test on WhatsApp"
@@ -512,22 +515,22 @@
     <span>Book a Test</span>
   </a>
 
-<!-- Mobile Menu Navigation Toggle Script -->
+  <!-- Mobile Menu Navigation Toggle Script -->
   <script>
-    (function() {
+    (function () {
       function initMobileMenu() {
         const menuToggle = document.querySelector('.menu-toggle');
         const navUl = document.querySelector('nav ul');
         if (!menuToggle || !navUl) return;
 
-        menuToggle.addEventListener('click', function(e) {
+        menuToggle.addEventListener('click', function (e) {
           e.stopPropagation();
           menuToggle.classList.toggle('active');
           navUl.classList.toggle('active');
         });
 
         // Close menu when clicking outside
-        document.addEventListener('click', function(e) {
+        document.addEventListener('click', function (e) {
           if (!navUl.contains(e.target) && !menuToggle.contains(e.target)) {
             menuToggle.classList.remove('active');
             navUl.classList.remove('active');
@@ -535,8 +538,8 @@
         });
 
         // Close menu when link is clicked
-        navUl.querySelectorAll('a').forEach(function(link) {
-          link.addEventListener('click', function() {
+        navUl.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () {
             menuToggle.classList.remove('active');
             navUl.classList.remove('active');
           });
