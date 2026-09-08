@@ -4464,6 +4464,7 @@ textarea.contact-field-control {
     padding: 40px;
     box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
     transition: all 0.3s ease;
+    scroll-margin-top: 100px;
 }
 
 .solution-card-block:hover {
@@ -5036,7 +5037,7 @@ textarea.contact-field-control {
     flex-shrink: 0;
 }
 
-.about-showcase-action .btn-about-link {
+.btn-about-link {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -5053,10 +5054,11 @@ textarea.contact-field-control {
     width: fit-content;
 }
 
-.about-showcase-action .btn-about-link:hover {
+.btn-about-link:hover {
     background: #0284c7;
     transform: translateY(-2px);
     box-shadow: 0 8px 24px rgba(2, 132, 199, 0.3);
+    color: #ffffff !important;
 }
 
 @media (max-width: 992px) {
@@ -6627,6 +6629,375 @@ footer {
     .home-final-cta-content p {
         font-size: 14px;
         margin-bottom: 18px;
+    }
+}
+
+/* =========================================================
+   PHASE 2: ABOUT TDPL PAGE STYLES
+   ========================================================= */
+
+.about-page-hero {
+    position: relative;
+    background-image: url("./lab images/about-hero.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 110px 0 95px;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+.about-page-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(7, 21, 52, 0.94) 0%,
+        rgba(12, 35, 86, 0.88) 50%,
+        rgba(3, 105, 161, 0.8) 100%
+    );
+    z-index: 1;
+}
+
+.about-page-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.about-breadcrumb {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #38bdf8;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 18px;
+}
+
+.about-page-hero h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.15;
+    color: #ffffff;
+    margin: 0 0 18px;
+    letter-spacing: -0.5px;
+}
+
+.about-page-hero p.about-hero-sub {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 19px;
+    line-height: 1.65;
+    color: #cbd5e1;
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+/* Who We Are Section */
+.about-who-section {
+    padding: 95px 0;
+    background: #ffffff;
+}
+
+.about-who-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-who-text h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.25;
+    margin: 12px 0 20px;
+    letter-spacing: -0.5px;
+}
+
+.about-who-text p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #475569;
+    margin-bottom: 20px;
+}
+
+.about-who-feature-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.about-who-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+}
+
+.about-who-card:hover {
+    background: #ffffff;
+    border-color: #38bdf8;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(2, 132, 199, 0.08);
+}
+
+.about-who-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: #e0f2fe;
+    color: #0284c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.about-who-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.about-who-card h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 6px;
+}
+
+.about-who-card p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #64748b;
+    margin: 0;
+}
+
+/* Vision & Mission Section */
+.about-vm-section {
+    padding: 90px 0;
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.about-vm-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.about-vm-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 44px 36px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.03);
+}
+
+.about-vm-card:hover {
+    transform: translateY(-4px);
+    border-color: #0284c7;
+    box-shadow: 0 14px 35px rgba(2, 132, 199, 0.1);
+}
+
+.about-vm-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #0284c7;
+    background: #e0f2fe;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-bottom: 18px;
+}
+
+.about-vm-card h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.3;
+    margin-bottom: 16px;
+}
+
+.about-vm-card p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #475569;
+    margin: 0;
+}
+
+/* Core Values (5 Cards) */
+.about-values-section {
+    padding: 95px 0;
+    background: #ffffff;
+}
+
+.about-values-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.about-value-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 30px 22px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.about-value-card:hover {
+    background: #ffffff;
+    border-color: #38bdf8;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(2, 132, 199, 0.09);
+}
+
+.about-value-num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    color: #0284c7;
+    background: #e0f2fe;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.about-value-card h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 10px;
+}
+
+.about-value-card p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #64748b;
+    margin: 0;
+}
+
+/* Our Strength (4 Pillars) */
+.about-strengths-section {
+    padding: 95px 0;
+    background: #071534;
+    color: #ffffff;
+}
+
+.about-strengths-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.about-strength-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    padding: 34px 26px;
+    transition: all 0.3s ease;
+}
+
+.about-strength-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #38bdf8;
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(56, 189, 248, 0.18);
+}
+
+.about-strength-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+
+.about-strength-icon svg {
+    width: 26px;
+    height: 26px;
+}
+
+.about-strength-card h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 12px;
+}
+
+.about-strength-card p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14.5px;
+    line-height: 1.65;
+    color: #94a3b8;
+    margin: 0;
+}
+
+/* Responsive queries for About Page */
+@media (max-width: 1100px) {
+    .about-values-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about-strengths-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .about-page-hero h1 {
+        font-size: 34px;
+    }
+    .about-page-hero p.about-hero-sub {
+        font-size: 16px;
+    }
+    .about-who-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+    .about-vm-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-values-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-strengths-grid {
+        grid-template-columns: 1fr;
     }
 }
 
