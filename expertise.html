@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Expertise - Transdical Technologies Pvt. Ltd.</title>
+
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon Links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./TT favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./TT favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./TT favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="./TT favicon/favicon.ico">
+    <link rel="manifest" href="./TT favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- ================= PAGE LOADER ================= -->
+    <div id="page-loader">
+        <div class="loader"></div>
+    </div>
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('page-loader');
+            loader.classList.add('fade-out');
+        });
+    </script>
+
+    <!-- ================= TOP BAR ================= -->
+    <section class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-bar-right">
+                <a href="tel:+918130030220" class="top-bar-item" id="top-phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    <span>+91 8130030220</span>
+                </a>
+                <a href="mailto:bd@transdica.com" class="top-bar-item" id="top-email">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="16" x="2" y="4" rx="2" />
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                    <span>bd@transdica.com</span>
+                </a>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+                        id="social-linkedin">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor"
+                                d="M19 0H5C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM8 19H5V8h3v11zM6.5 6.5C5.7 6.5 5 5.8 5 5s.7-1.5 1.5-1.5S8 4.2 8 5s-.7 1.5-1.5 1.5zM19 19h-3v-5.5c0-1.3 0-3-1.8-3-1.8 0-2.1 1.4-2.1 2.9V19H9V8h3v1.5c.4-.9 1.5-1.8 3.2-1.8 3.4 0 3.8 2.2 3.8 5.1V19z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= NAVBAR ================= -->
+    <header>
+        <div class="navbar-container">
+            <nav aria-label="Main Navigationbar">
+                <a class="logo-image" href="./index.html">
+                    <img class="logo" src="./TT logo.png" alt="Transdical Technologies Pvt. Ltd. Logo">
+                </a>
+                <button class="menu-toggle" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="./index.html" class="nav-link">Home</a></li>
+                    <li><a href="./about.html" class="nav-link">About TDPL</a></li>
+                    <li><a href="./solutions.html" class="nav-link">Our Solutions</a></li>
+                    <li><a href="./industries.html" class="nav-link">Industries</a></li>
+                    <li><a href="./products.html" class="nav-link">Products &amp; Technology</a></li>
+                    <li><a href="./expertise.html" class="nav-link active">Expertise</a></li>
+                    <li><a href="./partners.html" class="nav-link">Partners</a></li>
+                    <li><a href="./contact.html" class="nav-link">Contact Us</a></li>
+                    <li><a href="./contact.html" class="button-contact" id="button-request-quote">Talk to an Expert</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================================================= -->
+    <!--                     HERO                          -->
+    <!-- ================================================= -->
+    <section class="expertise-hero">
+        <div class="expertise-hero-content">
+            <div class="expertise-breadcrumb">
+                <a href="./index.html">Home</a>
+                <span>&rsaquo;</span>
+                <span>Expertise</span>
+            </div>
+
+            <h1>Deep Scientific &amp; Analytical Domain Expertise</h1>
+
+            <p class="expertise-hero-sub">
+                Bridging complex analytical, technical, and regulatory challenges with multidisciplinary capabilities
+                across mass spectrometry, advanced separation sciences, bioanalysis, and laboratory optimization.
+            </p>
+
+            <div class="expertise-stats-bar">
+                <div class="stat-pill-item">
+                    <span class="dot"></span>
+                    <span>8 Core Scientific Domains</span>
+                </div>
+                <div class="stat-pill-item">
+                    <span class="dot"></span>
+                    <span>LC-MS/MS &amp; GC-MS/MS Specialization</span>
+                </div>
+                <div class="stat-pill-item">
+                    <span class="dot"></span>
+                    <span>ICH &amp; Regulatory Alignment</span>
+                </div>
+                <div class="stat-pill-item">
+                    <span class="dot"></span>
+                    <span>Consultative Problem Solving</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================= -->
+    <!--          SECTION 1: OUR APPROACH TO EXPERTISE     -->
+    <!-- ================================================= -->
+    <section class="expertise-approach-section">
+        <div class="container">
+            <div class="expertise-approach-grid">
+                <div class="expertise-approach-text">
+                    <span class="home-section-tag" style="background: rgba(2, 132, 199, 0.1); color: #0284c7; margin-bottom: 14px; width: fit-content;">OUR SCIENTIFIC PHILOSOPHY</span>
+                    <h2>Science-First, Solution-Driven Technical Partnership.</h2>
+                    <p>
+                        At TTPL, expertise is more than theoretical knowledge—it is the practical ability to diagnose
+                        subtle analytical bottlenecks, design compliant workflows, and deliver reproducible results
+                        in demanding regulated environments.
+                    </p>
+                    <p>
+                        We operate as an integrated technical extension to your internal teams, bringing deep
+                        instrumental insights and cross-industry experience to help you make informed scientific decisions.
+                    </p>
+                    <a href="./contact.html" class="btn-about-link">
+                        Consult Our Scientific Team &rarr;
+                    </a>
+                </div>
+
+                <div class="approach-pillars-stack">
+                    <div class="approach-pillar-card">
+                        <div class="approach-pillar-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Multidisciplinary Technical Depth</h3>
+                            <p>Seamlessly integrating analytical chemistry, biopharmaceutics, molecular biology, and instrumentation engineering into practical solutions.</p>
+                        </div>
+                    </div>
+
+                    <div class="approach-pillar-card">
+                        <div class="approach-pillar-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Reproducible, Robust Methodologies</h3>
+                            <p>Every strategy and method troubleshooting protocol is engineered for long-term consistency, high throughput, and strict regulatory audit readiness.</p>
+                        </div>
+                    </div>
+
+                    <div class="approach-pillar-card">
+                        <div class="approach-pillar-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="12" y1="8" x2="12" y2="12" />
+                                <line x1="12" y1="16" x2="12.01" y2="16" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Technology-Enabled Problem Solving</h3>
+                            <p>Direct hands-on experience across leading chromatography and tandem mass spec platforms, ensuring rapid root-cause identification.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================= -->
+    <!--       SECTION 2: 8 SPECIALIZED EXPERTISE DOMAINS  -->
+    <!-- ================================================= -->
+    <section class="expertise-domains-section" id="domains">
+        <div class="products-wrapper">
+            <div class="expertise-section-header">
+                <span class="category-badge-pill">Core Capabilities</span>
+                <h2>8 Specialized Scientific Domains</h2>
+                <p>
+                    Explore the specialized technical areas where TTPL delivers expert consultation, method development,
+                    troubleshooting, and technology solutions.
+                </p>
+            </div>
+
+            <div class="domains-grid-8">
+
+                <!-- 1. Mass Spectrometry -->
+                <div class="domain-card-item">
+                    <div class="domain-card-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                        </svg>
+                    </div>
+                    <span class="domain-card-num">Domain 01</span>
+                    <h3>Mass Spectrometry</h3>
+                    <p class="domain-desc">
+                        Advanced tandem mass spectrometry expertise for ultra-trace quantification, unknown structural identification, and complex matrix challenges.
+                    </p>
+                    <ul class="domain-capabilities-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>LC-MS/MS &amp; GC-MS/MS MRM development</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Ion source &amp; collision energy optimization</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Matrix effect &amp; ion suppression remediation</span>
+                        </li>
+                    </ul>
+                    <a href="./contact.html" class="domain-card-link">Discuss MS Challenge &rarr;</a>
+                </div>
+
+                <!-- 2. Chromatography -->
+                <div class="domain-card-item">
+                    <div class="domain-card-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="3" y1="9" x2="21" y2="9"/>
+                            <line x1="9" y1="21" x2="9" y2="9"/>
+                        </svg>
+                    </div>
+                    <span class="domain-card-num">Domain 02</span>
+                    <h3>Chromatography</h3>
+                    <p class="domain-desc">
+                        Comprehensive separation science across HPLC, UHPLC, GC, and Ion Chromatography for high-resolution purity and assay determination.
+                    </p>
+                    <ul class="domain-capabilities-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Stationary phase &amp; column chemistry selection</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Chiral separations &amp; enantiomeric purity</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Gradient design &amp; run-time compression</span>
+                        </li>
+                    </ul>
+                    <a href="./contact.html" class="domain-card-link">Discuss Chromatography &rarr;</a>
+                </div>
+
+                <!-- 3. Pharmaceutical Analysis -->
+                <div class="domain-card-item">
+                    <div class="domain-card-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10.5 20.5 3.5 13.5a4.95 4.95 0 1 1 7-7l7 7a4.95 4.95 0 1 1-7 7Z"/>
+                            <path d="m8.5 8.5 7 7"/>
+                        </svg>
+                    </div>
+                    <span class="domain-card-num">Domain 03</span>
+                    <h3>Pharma Analysis</h3>
+                    <p class="domain-desc">
+                        Assay development, impurity characterization, degradation pathways, and stability protocol design aligned with pharmacopeial standards.
+                    </p>
+                    <ul class="domain-capabilities-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Nitrosamine &amp; mutagenic impurity screening</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Residual solvents testing (USP &lt;467&gt;)</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Forced degradation &amp; stability study design</span>
+                        </li>
+                    </ul>
+                    <a href="./contact.html" class="domain-card-link">Inquire on Pharma &rarr;</a>
+                </div>
+
+                <!-- 4. Bioanalytical Solutions -->
+                <div class="domain-card-item">
+                    <div class="domain-card-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                        </svg>
+                    </div>
+                    <span class="domain-card-num">Domain 04</span>
+                    <h3>Bioanalytical Solutions</h3>
+                    <p class="domain-desc">
+                        Quantification of active drug candidates, metabolites, and biomarkers in complex biological matrices (plasma, serum, tissue).
+                    </p>
+                    <ul class="domain-capabilities-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>High-recovery SPE, PPT &amp; SLE sample cleanup</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>PK/PD assay method development</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>ICH M10 bioanalytical validation guidance</span>
+                        </li>
+                    </ul>
+                    <a href="./contact.html" class="domain-card-link">Discuss Bioanalysis &rarr;</a>
+                </div>
+
+                <!-- 5. Biologics & Biotechnology -->
+                <div class="domain-card-item">
+                    <div class="domain-card-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                        </svg>
+                    </div>
+                    <span class="domain-card-num">Domain 05</span>
+                    <h3>Biologics &amp; Biotech</h3>
+                    <p class="domain-desc">
+                        Structural characterization, purity profiling, and intact mass determination for recombinant proteins, peptides, and monoclonal antibodies.
+                    </p>
+                    <ul class="domain-capabilities-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Peptide mapping &amp; PTM identification</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Enzymatic activity &amp; kinetic assays</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Charge variant &amp; aggregation analysis (SEC)</span>
+                        </li>
+                    </ul>
+                    <a href="./contact.html" class="domain-card-link">Inquire on Biologics &rarr;</a>
+                </div>
+
+                <!-- 6. Cell Culture & Enzymes -->
+                <div class="domain-card-item">
+                    <div class="domain-card-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <span class="domain-card-num">Domain 06</span>
+                    <h3>Cell Culture &amp; Enzymes</h3>
+                    <p class="domain-desc">
+                        Specialized enzyme integration, biocatalysis optimization, media component profiling, and bioprocess enhancement.
+                    </p>
+                    <ul class="domain-capabilities-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Indigenous enzyme selection &amp; sourcing</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Cell culture buffer &amp; feed optimization</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Enzyme cleavage protocol development</span>
+                        </li>
+                    </ul>
+                    <a href="./contact.html" class="domain-card-link">Discuss Enzymes &rarr;</a>
+                </div>
+
+                <!-- 7. Method Remediation & Troubleshooting -->
+                <div class="domain-card-item">
+                    <div class="domain-card-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <span class="domain-card-num">Domain 07</span>
+                    <h3>Method Troubleshooting</h3>
+                    <p class="domain-desc">
+                        Rapid scientific diagnosis and root-cause resolution for failing methods, system suitability issues, and unexplainable chromatographic anomalies.
+                    </p>
+                    <ul class="domain-capabilities-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Peak fronting, tailing &amp; ghost peak resolution</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Method transfer cross-lab discordance fix</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Baseline noise &amp; drift stabilization</span>
+                        </li>
+                    </ul>
+                    <a href="./contact.html" class="domain-card-link">Resolve Method Issues &rarr;</a>
+                </div>
+
+                <!-- 8. Lab Technology & Workflow -->
+                <div class="domain-card-item">
+                    <div class="domain-card-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                        </svg>
+                    </div>
+                    <span class="domain-card-num">Domain 08</span>
+                    <h3>Workflow Optimization</h3>
+                    <p class="domain-desc">
+                        Instrumentation selection advisory, sample preparation automation, and laboratory operational throughput enhancements.
+                    </p>
+                    <ul class="domain-capabilities-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Hardware requirement assessment &amp; sizing</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Throughput bottlenecks identification</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>GLP/GMP compliant data flow integration</span>
+                        </li>
+                    </ul>
+                    <a href="./contact.html" class="domain-card-link">Optimize Workflow &rarr;</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================= -->
+    <!--       SECTION 3: REAL-WORLD SCENARIOS WE SOLVE    -->
+    <!-- ================================================= -->
+    <section class="expertise-scenarios-section">
+        <div class="products-wrapper">
+            <div class="expertise-section-header">
+                <span class="about-vm-badge">Proven Problem Solving</span>
+                <h2>When Organizations Engage Our Experts</h2>
+                <p>
+                    Real-world scenarios illustrating how TTPL intervenes to unlock stalled projects, resolve technical
+                    roadblocks, and accelerate scientific delivery.
+                </p>
+            </div>
+
+            <div class="scenarios-grid-4">
+
+                <!-- Scenario 1 -->
+                <div class="scenario-card-item">
+                    <span class="scenario-header-tag">Method Transfer &amp; System Suitability</span>
+                    <h3>HPLC Method Failing During Site-to-Site Transfer</h3>
+                    <div class="scenario-block-box">
+                        <div class="scenario-label-wrap challenge">
+                            <span>Challenge</span>
+                        </div>
+                        <p>
+                            A pharmaceutical QC laboratory experienced significant peak splitting and failing resolution
+                            criteria when transferring an established assay from an older HPLC to a high-pressure UHPLC platform.
+                        </p>
+                    </div>
+                    <div class="scenario-block-box">
+                        <div class="scenario-label-wrap solution">
+                            <span>TDPL Solution</span>
+                        </div>
+                        <p>
+                            Our team performed dwell volume characterization, adjusted gradient delay compensation, and
+                            optimized pre-column volume. We re-established baseline separation with a 40% reduction in run time.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Scenario 2 -->
+                <div class="scenario-card-item">
+                    <span class="scenario-header-tag">Regulatory Impurity Screening</span>
+                    <h3>Ultra-Trace Nitrosamine Quantification in Drug Products</h3>
+                    <div class="scenario-block-box">
+                        <div class="scenario-label-wrap challenge">
+                            <span>Challenge</span>
+                        </div>
+                        <p>
+                            A generic formulation developer faced regulatory deficiency queries regarding sub-ppb NDMA and
+                            NDEA quantification where high API concentration caused severe ion suppression on standard MS setups.
+                        </p>
+                    </div>
+                    <div class="scenario-block-box">
+                        <div class="scenario-label-wrap solution">
+                            <span>TDPL Solution</span>
+                        </div>
+                        <p>
+                            TDPL designed an orthogonal solid-phase extraction protocol and configured high-flow APCI positive
+                            LC-MS/MS parameters, establishing LOQs well below regulatory acceptable intake limits.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Scenario 3 -->
+                <div class="scenario-card-item">
+                    <span class="scenario-header-tag">Biocatalysis &amp; Biologics</span>
+                    <h3>Enzymatic Digestion Inconsistency in Proteomics Workflow</h3>
+                    <div class="scenario-block-box">
+                        <div class="scenario-label-wrap challenge">
+                            <span>Challenge</span>
+                        </div>
+                        <p>
+                            A biotechnology research group observed high trypsin autolysis peaks and incomplete protein
+                            digestion, creating noisy mass spectra during recombinant protein peptide mapping.
+                        </p>
+                    </div>
+                    <div class="scenario-block-box">
+                        <div class="scenario-label-wrap solution">
+                            <span>TDPL Solution</span>
+                        </div>
+                        <p>
+                            We supplied modified sequencing-grade trypsin, adjusted reaction stoichiometry, and provided a
+                            standardized digestion buffer protocol, achieving &gt; 95% sequence coverage reproducibly.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Scenario 4 -->
+                <div class="scenario-card-item">
+                    <span class="scenario-header-tag">Infrastructure &amp; Capital Advisory</span>
+                    <h3>Setting Up High-Throughput LC-MS/MS Bioanalytical Capability</h3>
+                    <div class="scenario-block-box">
+                        <div class="scenario-label-wrap challenge">
+                            <span>Challenge</span>
+                        </div>
+                        <p>
+                            An expanding R&amp;D facility needed to procure and commission new mass spectrometry hardware
+                            without internal senior mass spectrometry specialists to evaluate competitive bids.
+                        </p>
+                    </div>
+                    <div class="scenario-block-box">
+                        <div class="scenario-label-wrap solution">
+                            <span>TDPL Solution</span>
+                        </div>
+                        <p>
+                            TDPL evaluated analyte matrices, recommended optimized instrument configurations, oversaw site
+                            readiness, and assisted in commissioning initial analytical methods for immediate operational utility.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================= -->
+    <!--       SECTION 4: CONSULTATION WORKFLOW            -->
+    <!-- ================================================= -->
+    <section class="expertise-workflow-section">
+        <div class="products-wrapper">
+            <div class="procure-pathway-header">
+                <span class="about-vm-badge">Structured &bull; Confidential &bull; Effective</span>
+                <h2>Our Expert Consultation Roadmap</h2>
+                <p>
+                    A clear, collaborative 4-step framework designed to assess requirements, provide actionable solutions,
+                    and ensure long-term laboratory independence.
+                </p>
+            </div>
+
+            <div class="workflow-steps-grid">
+                <!-- Step 1 -->
+                <div class="workflow-step-card">
+                    <div class="workflow-step-num">01</div>
+                    <h3>Discovery &amp; Scoping</h3>
+                    <p>
+                        A confidential technical exchange with our senior specialists to define objectives, current data, constraints, and timeline.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="workflow-step-card">
+                    <div class="workflow-step-num">02</div>
+                    <h3>Data Review &amp; Feasibility</h3>
+                    <p>
+                        In-depth scientific evaluation of method parameters, chromatograms, spectra, or equipment configurations to identify root causes.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="workflow-step-card">
+                    <div class="workflow-step-num">03</div>
+                    <h3>Solution Blueprint</h3>
+                    <p>
+                        Delivery of structured recommendations, tailored method parameters, or hardware configurations ready for lab verification.
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="workflow-step-card">
+                    <div class="workflow-step-num">04</div>
+                    <h3>Execution &amp; Transfer</h3>
+                    <p>
+                        Hands-on or consultative support through trial runs, validation documentation, and knowledge transfer to internal personnel.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================= -->
+    <!--                     CTA BANNER                    -->
+    <!-- ================================================= -->
+    <div class="products-wrapper" style="padding: 70px 24px;">
+        <section class="testing-cta-banner">
+            <div class="testing-cta-left">
+                <div class="testing-cta-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M9 3h6" />
+                        <path d="M10 3v4l-4.5 8.5A3 3 0 0 0 8.2 20h7.6a3 3 0 0 0 2.7-4.5L14 7V3" />
+                        <path d="M8 14h8" />
+                    </svg>
+                </div>
+                <div class="testing-cta-text">
+                    <h3>Have a Specialized Analytical or Technical Question?</h3>
+                    <p>Schedule a confidential consultation with our senior scientific team to discuss your project requirements.</p>
+                </div>
+            </div>
+
+            <a href="./contact.html" class="testing-cta-btn">
+                Talk to an Expert &rarr;
+            </a>
+        </section>
+    </div>
+
+    <!-- ================================================= -->
+    <!--                     FOOTER                        -->
+    <!-- ================================================= -->
+    <footer>
+        <div class="footer-container">
+            <!-- Column 1: Brand Info -->
+            <div class="footer-col footer-brand-col">
+                <img class="footer-logo" src="./TT logo white.png" alt="Transdical Technologies Pvt. Ltd. Logo">
+                <p class="footer-desc">
+                    TDPL provides integrated scientific, analytical and laboratory solutions through expertise, technology, specialized products and strategic collaborations.
+                </p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path d="M19 0H5C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM8 19H5V8h3v11zM6.5 6.5C5.7 6.5 5 5.8 5 5s.7-1.5 1.5-1.5S8 4.2 8 5s-.7 1.5-1.5 1.5zM19 19h-3v-5.5c0-1.3 0-3-1.8-3-1.8 0-2.1 1.4-2.1 2.9V19H9V8h3v1.5c.4-.9 1.5-1.8 3.2-1.8 3.4 0 3.8 2.2 3.8 5.1V19z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col">
+                <h3 class="footer-heading">Company</h3>
+                <ul class="footer-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About TDPL</a></li>
+                    <li><a href="./solutions.html">Our Solutions</a></li>
+                    <li><a href="./industries.html">Industries</a></li>
+                    <li><a href="./products.html">Products &amp; Technology</a></li>
+                    <li><a href="./expertise.html">Expertise</a></li>
+                    <li><a href="./partners.html">Partners</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Solutions -->
+            <div class="footer-col">
+                <h3 class="footer-heading">Our Solutions</h3>
+                <ul class="footer-links">
+                    <li><a href="./solutions.html#analytical-solutions">Analytical &amp; Scientific Solutions</a></li>
+                    <li><a href="./solutions.html#project-support">Project &amp; Expert Support</a></li>
+                    <li><a href="./solutions.html#enzymes-reagents">Specialized Enzymes &amp; Reagents</a></li>
+                    <li><a href="./solutions.html#instruments-technology">Laboratory Instruments &amp; Tech</a></li>
+                    <li><a href="./solutions.html#laboratory-consumables">Consumables &amp; Supplies</a></li>
+                    <li><a href="./solutions.html#calibration-maintenance">Calibration &amp; Maintenance</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact info -->
+            <div class="footer-col">
+                <h3 class="footer-contact-heading">Contact Us</h3>
+                <p class="footer-text">Transdical Technologies Pvt. Ltd. House, Sector-1, Panchkula, Haryana, India</p>
+                <p class="footer-text">
+                    <a href="mailto:bd@transdica.com" style="color: inherit; text-decoration: none;">bd@transdica.com</a>
+                </p>
+                <p class="footer-text">
+                    <a href="tel:+918130030220" style="color: inherit; text-decoration: none;">+91 8130030220</a>
+                </p>
+                <div style="margin-top: 10px;">
+                    <a href="./contact.html" class="footer-consult-btn">Talk to an Expert &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Transdical Technologies Pvt. Ltd. (TTPL). All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
+    <a href="https://wa.me/918130030220?text=Hello%20TDPL%20Team%2C%20I%20would%20like%20to%20consult%20an%20expert%20regarding%20a%20scientific%20solution."
+        class="whatsapp-float-btn" target="_blank" rel="noopener noreferrer" aria-label="Consult an Expert on WhatsApp"
+        id="floating-whatsapp-btn">
+        <svg viewBox="0 0 24 24">
+            <path
+                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+        </svg>
+        <span>Discuss with an Expert</span>
+    </a>
+
+    <!-- Mobile Menu Navigation Toggle Script -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navUl = document.querySelector('header nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            menuToggle.classList.toggle('active');
+            navUl.classList.toggle('active');
+        });
+
+        document.addEventListener('click', function (e) {
+            if (!navUl.contains(e.target) && !menuToggle.contains(e.target)) {
+                menuToggle.classList.remove('active');
+                navUl.classList.remove('active');
+            }
+        });
+
+        navUl.querySelectorAll('a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                menuToggle.classList.remove('active');
+                navUl.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
