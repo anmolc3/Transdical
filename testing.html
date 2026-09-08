@@ -228,12 +228,29 @@
   <!-- ================================================= -->
   <section class="detailed-tasks-section">
     <div class="testing-page-container">
-      <div class="testing-section-header">
-        <h2>Detailed Tasks / Tests We Perform</h2>
+      <div class="tasks-slider-header-wrap">
+        <div class="testing-section-header">
+          <h2>Detailed Tasks / Tests We Perform</h2>
+        </div>
+        <div class="tasks-slider-controls">
+          <button class="tasks-slider-btn" id="tasksPrevBtn" aria-label="Previous Slide" title="Previous Slide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="m15 18-6-6 6-6" />
+            </svg>
+          </button>
+          <button class="tasks-slider-btn" id="tasksNextBtn" aria-label="Next Slide" title="Next Slide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="m9 18 6-6-6-6" />
+            </svg>
+          </button>
+        </div>
       </div>
 
-      <div class="detailed-tasks-grid">
-        <!-- 1. Food Testing -->
+      <div class="detailed-tasks-slider-viewport" id="tasksSliderViewport">
+        <div class="detailed-tasks-grid detailed-tasks-slider-track" id="tasksSliderTrack">
+          <!-- 1. Food Testing -->
         <div class="detailed-task-card">
           <div class="detailed-task-img">
             <img src="./lab images/ft.webp" alt="Food Testing Laboratory Analysis">
@@ -361,14 +378,14 @@
                   stroke-linejoin="round">
                   <path d="M20 6 9 17l-5-5" />
                 </svg>
-                Method Development
+                Assay &amp; Potency Testing
               </li>
               <li>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
                   stroke-linejoin="round">
                   <path d="M20 6 9 17l-5-5" />
                 </svg>
-                Method Validation
+                Dissolution Profiling
               </li>
               <li>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
@@ -396,7 +413,68 @@
                   stroke-linejoin="round">
                   <path d="M20 6 9 17l-5-5" />
                 </svg>
-                Extractables & Leachables
+                Extractables &amp; Leachables
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 4. Method Development -->
+        <div class="detailed-task-card">
+          <div class="detailed-task-img">
+            <img src="./lab images/l1.webp" alt="Analytical Method Development, Validation and Verification">
+          </div>
+          <div class="detailed-task-body">
+            <h3>Method Development</h3>
+            <ul class="task-checklist">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                Method Validation
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                Method Verification
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                Sample Analysis
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                Method Optimization
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                Specificity &amp; Linearity
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                Precision &amp; Robustness
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                LOD &amp; LOQ Testing
               </li>
             </ul>
           </div>
@@ -578,6 +656,10 @@
           </div>
         </div>
       </div>
+      </div>
+
+      <!-- Slide Indicator Dots -->
+      <div class="tasks-slider-dots" id="tasksSliderDots"></div>
     </div>
   </section>
 
@@ -882,6 +964,159 @@
     </svg>
     <span>Discuss on WhatsApp</span>
   </a>
+
+  <!-- ================= TASKS SLIDESHOW SCRIPT ================= -->
+  <script>
+    (function () {
+      const track = document.getElementById('tasksSliderTrack');
+      const prevBtn = document.getElementById('tasksPrevBtn');
+      const nextBtn = document.getElementById('tasksNextBtn');
+      const dotsContainer = document.getElementById('tasksSliderDots');
+      if (!track || !prevBtn || !nextBtn || !dotsContainer) return;
+
+      const cards = track.querySelectorAll('.detailed-task-card');
+      const totalCards = cards.length;
+      let currentIndex = 0;
+      let autoplayTimer = null;
+      const autoplayDelay = 3500;
+
+      // Generate dots
+      dotsContainer.innerHTML = '';
+      cards.forEach((_, idx) => {
+        const dot = document.createElement('button');
+        dot.className = 'tasks-slider-dot' + (idx === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Go to slide ' + (idx + 1));
+        dot.addEventListener('click', () => {
+          goToSlide(idx);
+          resetAutoplay();
+        });
+        dotsContainer.appendChild(dot);
+      });
+
+      const dots = dotsContainer.querySelectorAll('.tasks-slider-dot');
+
+      function updateActiveDot(index) {
+        dots.forEach((dot, idx) => {
+          dot.classList.toggle('active', idx === index);
+        });
+      }
+
+      function getScrollStep() {
+        const firstCard = cards[0];
+        if (!firstCard) return 300;
+        const gap = parseInt(window.getComputedStyle(track).gap) || 20;
+        return firstCard.offsetWidth + gap;
+      }
+
+      function goToSlide(index) {
+        if (index < 0) index = 0;
+        if (index >= totalCards) index = totalCards - 1;
+        currentIndex = index;
+        const step = getScrollStep();
+        track.scrollTo({
+          left: index * step,
+          behavior: 'smooth'
+        });
+        updateActiveDot(index);
+      }
+
+      function slideNext() {
+        const step = getScrollStep();
+        const maxScroll = track.scrollWidth - track.clientWidth;
+        if (track.scrollLeft + step >= maxScroll - 15) {
+          goToSlide(0);
+        } else {
+          track.scrollBy({ left: step, behavior: 'smooth' });
+        }
+      }
+
+      function slidePrev() {
+        const step = getScrollStep();
+        if (track.scrollLeft <= 15) {
+          goToSlide(totalCards - 1);
+        } else {
+          track.scrollBy({ left: -step, behavior: 'smooth' });
+        }
+      }
+
+      nextBtn.addEventListener('click', () => {
+        slideNext();
+        resetAutoplay();
+      });
+
+      prevBtn.addEventListener('click', () => {
+        slidePrev();
+        resetAutoplay();
+      });
+
+      // Update active dot on manual scroll
+      let scrollTimeout;
+      track.addEventListener('scroll', () => {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+          const step = getScrollStep();
+          const current = Math.round(track.scrollLeft / step);
+          const boundedIndex = Math.min(Math.max(current, 0), totalCards - 1);
+          updateActiveDot(boundedIndex);
+          currentIndex = boundedIndex;
+        }, 60);
+      }, { passive: true });
+
+      // Autoplay
+      function startAutoplay() {
+        if (autoplayTimer) clearInterval(autoplayTimer);
+        autoplayTimer = setInterval(slideNext, autoplayDelay);
+      }
+
+      function stopAutoplay() {
+        if (autoplayTimer) {
+          clearInterval(autoplayTimer);
+          autoplayTimer = null;
+        }
+      }
+
+      function resetAutoplay() {
+        stopAutoplay();
+        startAutoplay();
+      }
+
+      const viewport = document.getElementById('tasksSliderViewport') || track;
+      viewport.addEventListener('mouseenter', stopAutoplay);
+      viewport.addEventListener('mouseleave', startAutoplay);
+      viewport.addEventListener('touchstart', stopAutoplay, { passive: true });
+      viewport.addEventListener('touchend', startAutoplay, { passive: true });
+
+      // Mouse drag to scroll
+      let isDown = false;
+      let startX, scrollLeftVal;
+
+      track.addEventListener('mousedown', (e) => {
+        isDown = true;
+        track.classList.add('is-dragging');
+        startX = e.pageX - track.offsetLeft;
+        scrollLeftVal = track.scrollLeft;
+        stopAutoplay();
+      });
+
+      window.addEventListener('mouseup', () => {
+        if (isDown) {
+          isDown = false;
+          track.classList.remove('is-dragging');
+          startAutoplay();
+        }
+      });
+
+      track.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - track.offsetLeft;
+        const walk = (x - startX) * 1.5;
+        track.scrollLeft = scrollLeftVal - walk;
+      });
+
+      startAutoplay();
+    })();
+  </script>
 </body>
 
 </html>
