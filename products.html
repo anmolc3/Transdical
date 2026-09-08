@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products &amp; Technology - Transdical Technologies Pvt. Ltd.</title>
+
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon Links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./TT favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./TT favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./TT favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="./TT favicon/favicon.ico">
+    <link rel="manifest" href="./TT favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- ================= PAGE LOADER ================= -->
+    <div id="page-loader">
+        <div class="loader"></div>
+    </div>
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('page-loader');
+            loader.classList.add('fade-out');
+        });
+    </script>
+
+    <!-- ================= TOP BAR ================= -->
+    <section class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-bar-right">
+                <a href="tel:+918130030220" class="top-bar-item" id="top-phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    <span>+91 8130030220</span>
+                </a>
+                <a href="mailto:bd@transdica.com" class="top-bar-item" id="top-email">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="16" x="2" y="4" rx="2" />
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                    <span>bd@transdica.com</span>
+                </a>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+                        id="social-linkedin">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor"
+                                d="M19 0H5C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM8 19H5V8h3v11zM6.5 6.5C5.7 6.5 5 5.8 5 5s.7-1.5 1.5-1.5S8 4.2 8 5s-.7 1.5-1.5 1.5zM19 19h-3v-5.5c0-1.3 0-3-1.8-3-1.8 0-2.1 1.4-2.1 2.9V19H9V8h3v1.5c.4-.9 1.5-1.8 3.2-1.8 3.4 0 3.8 2.2 3.8 5.1V19z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= NAVBAR ================= -->
+    <header>
+        <div class="navbar-container">
+            <nav aria-label="Main Navigationbar">
+                <a class="logo-image" href="./index.html">
+                    <img class="logo" src="./TT logo.png" alt="Transdical Technologies Pvt. Ltd. Logo">
+                </a>
+                <button class="menu-toggle" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="./index.html" class="nav-link">Home</a></li>
+                    <li><a href="./about.html" class="nav-link">About TDPL</a></li>
+                    <li><a href="./solutions.html" class="nav-link">Our Solutions</a></li>
+                    <li><a href="./industries.html" class="nav-link">Industries</a></li>
+                    <li><a href="./products.html" class="nav-link active">Products &amp; Technology</a></li>
+                    <li><a href="./expertise.html" class="nav-link">Expertise</a></li>
+                    <li><a href="./partners.html" class="nav-link">Partners</a></li>
+                    <li><a href="./contact.html" class="nav-link">Contact Us</a></li>
+                    <li><a href="./contact.html" class="button-contact" id="button-request-quote">Talk to an Expert</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================================================= -->
+    <!--                     HERO                          -->
+    <!-- ================================================= -->
+    <section class="products-hero">
+        <div class="products-hero-content">
+            <div class="products-breadcrumb">
+                <a href="./index.html">Home</a>
+                <span>&rsaquo;</span>
+                <span>Products &amp; Technology</span>
+            </div>
+
+            <h1>Precision Products &amp; Advanced Laboratory Technology</h1>
+
+            <p class="products-hero-sub">
+                Equipping researchers, pharmaceutical innovators, and laboratory leaders with high-purity specialized
+                enzymes, advanced chromatography instrumentation, precision equipment, and certified consumables.
+            </p>
+
+            <div class="category-jump-bar">
+                <a href="#enzymes" class="jump-pill">
+                    <span class="num">01</span> Specialized Enzymes &amp; Reagents
+                </a>
+                <a href="#instruments" class="jump-pill">
+                    <span class="num">02</span> Analytical Instruments
+                </a>
+                <a href="#equipment" class="jump-pill">
+                    <span class="num">03</span> Laboratory Equipment
+                </a>
+                <a href="#consumables" class="jump-pill">
+                    <span class="num">04</span> Analytical Consumables
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================= -->
+    <!--   CATEGORY 1: SPECIALIZED ENZYMES & REAGENTS      -->
+    <!-- ================================================= -->
+    <section class="product-category-section" id="enzymes">
+        <div class="products-wrapper">
+
+            <div class="category-showcase-split">
+                <div class="category-showcase-text">
+                    <span class="category-badge-pill">Category 01 &bull; Biotechnology &amp; Research</span>
+                    <h2>Specialized Enzymes &amp; Scientific Reagents</h2>
+                    <p>
+                        TTPL provides high-purity indigenous and research-grade enzymes developed for critical
+                        applications across molecular biology, biologics development, food processing, and analytical
+                        proteomics. Each enzyme is manufactured under rigorous quality controls with complete batch
+                        traceability.
+                    </p>
+
+                    <div class="category-highlights-list">
+                        <div class="highlight-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+                            <span>Molecular Biology &amp; PCR</span>
+                        </div>
+                        <div class="highlight-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+                            <span>Proteomics &amp; Mass Spec</span>
+                        </div>
+                        <div class="highlight-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+                            <span>Bioprocess &amp; Food Grade</span>
+                        </div>
+                        <div class="highlight-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+                            <span>Custom Lot Documentation</span>
+                        </div>
+                    </div>
+
+                    <a href="./contact.html" class="btn-solution-cta">Discuss Enzyme Requirements &rarr;</a>
+                </div>
+
+                <div class="category-showcase-image">
+                    <img src="./lab images/prod-enzymes.webp" alt="Specialized Enzymes and Scientific Reagents">
+                </div>
+            </div>
+
+            <!-- 4-Card Grid for Enzymes -->
+            <div class="products-cards-grid">
+                <!-- Card 1 -->
+                <div class="product-card-item">
+                    <span class="prod-card-tag">Molecular Biology</span>
+                    <h3>High-Fidelity PCR Enzymes</h3>
+                    <p class="prod-desc">
+                        Engineered DNA polymerases providing superior fidelity, robust yield, and low GC-bias for genomic amplifications and NGS library prep.
+                    </p>
+                    <div class="prod-spec-box">
+                        <div class="spec-row">
+                            <span class="spec-label">Concentration:</span>
+                            <span class="spec-val">5 U/&mu;L</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Fidelity:</span>
+                            <span class="spec-val">&gt; 50x vs Taq</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Storage:</span>
+                            <span class="spec-val">-20&deg;C Stable</span>
+                        </div>
+                    </div>
+                    <div class="doc-pill-wrap">
+                        <span class="doc-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> TDS</span>
+                        <span class="doc-pill">COA</span>
+                        <span class="doc-pill">Protocol</span>
+                    </div>
+                    <a href="./contact.html" class="btn-card-action">Inquire About Product &rarr;</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="product-card-item">
+                    <span class="prod-card-tag">Proteomics &amp; MS</span>
+                    <h3>Sequencing-Grade Trypsin</h3>
+                    <p class="prod-desc">
+                        Highly purified, modified porcine trypsin treated with TPCK to inhibit chymotryptic activity. Ideal for in-gel and solution digests for LC-MS/MS.
+                    </p>
+                    <div class="prod-spec-box">
+                        <div class="spec-row">
+                            <span class="spec-label">Purity:</span>
+                            <span class="spec-val">&ge; 98% SDS-PAGE</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Autolysis:</span>
+                            <span class="spec-val">Extremely Low</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Format:</span>
+                            <span class="spec-val">Lyophilized</span>
+                        </div>
+                    </div>
+                    <div class="doc-pill-wrap">
+                        <span class="doc-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> TDS</span>
+                        <span class="doc-pill">MS Grade</span>
+                        <span class="doc-pill">COA</span>
+                    </div>
+                    <a href="./contact.html" class="btn-card-action">Inquire About Product &rarr;</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="product-card-item">
+                    <span class="prod-card-tag">Industrial Enzymes</span>
+                    <h3>Cellulase &amp; Amylase Complexes</h3>
+                    <p class="prod-desc">
+                        High-activity biocatalyst complexes for biomass hydrolysis, textile bio-polishing, starch breakdown, and nutraceutical processing.
+                    </p>
+                    <div class="prod-spec-box">
+                        <div class="spec-row">
+                            <span class="spec-label">Activity:</span>
+                            <span class="spec-val">&ge; 100,000 U/g</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">pH Range:</span>
+                            <span class="spec-val">4.0 &ndash; 7.5</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Grade:</span>
+                            <span class="spec-val">Industrial / Food</span>
+                        </div>
+                    </div>
+                    <div class="doc-pill-wrap">
+                        <span class="doc-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> TDS</span>
+                        <span class="doc-pill">Certificate</span>
+                        <span class="doc-pill">Bulk Pack</span>
+                    </div>
+                    <a href="./contact.html" class="btn-card-action">Inquire About Product &rarr;</a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="product-card-item">
+                    <span class="prod-card-tag">Biochemistry Reagents</span>
+                    <h3>Proteinase K &amp; Ligation Buffers</h3>
+                    <p class="prod-desc">
+                        Recombinant non-specific serine protease free of RNases and DNases, suitable for genomic isolation, viral RNA extraction, and enzymatic buffers.
+                    </p>
+                    <div class="prod-spec-box">
+                        <div class="spec-row">
+                            <span class="spec-label">Specific Act.:</span>
+                            <span class="spec-val">&ge; 30 U/mg</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">DNase/RNase:</span>
+                            <span class="spec-val">Non-detectable</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Packaging:</span>
+                            <span class="spec-val">100mg / 1g / 5g</span>
+                        </div>
+                    </div>
+                    <div class="doc-pill-wrap">
+                        <span class="doc-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> TDS</span>
+                        <span class="doc-pill">COA</span>
+                        <span class="doc-pill">Batch Spec</span>
+                    </div>
+                    <a href="./contact.html" class="btn-card-action">Inquire About Product &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================================================= -->
+    <!--   CATEGORY 2: ANALYTICAL INSTRUMENTS              -->
+    <!-- ================================================= -->
+    <section class="product-category-section alt-bg" id="instruments">
+        <div class="products-wrapper">
+
+            <div class="category-showcase-split reverse">
+                <div class="category-showcase-text">
+                    <span class="category-badge-pill">Category 02 &bull; Analytical Systems</span>
+                    <h2>Analytical Instruments &amp; Chromatography</h2>
+                    <p>
+                        Through strategic technology partner networks, TTPL facilitates the procurement, configuration,
+                        and application integration of premium analytical instruments. From ultra-trace mass spectrometry
+                        to routine chromatographic systems, we align hardware directly with your testing goals.
+                    </p>
+
+                    <div class="category-highlights-list">
+                        <div class="highlight-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+                            <span>Triple Quadrupole LC-MS/MS</span>
+                        </div>
+                        <div class="highlight-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+                            <span>Gas Chromatography GC-MS/MS</span>
+                        </div>
+                        <div class="highlight-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+                            <span>HPLC &amp; UHPLC Systems</span>
+                        </div>
+                        <div class="highlight-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+                            <span>Method Development Support</span>
+                        </div>
+                    </div>
+
+                    <a href="./contact.html" class="btn-solution-cta">Explore Instrument Options &rarr;</a>
+                </div>
+
+                <div class="category-showcase-image">
+                    <img src="./lab images/prod-instruments.webp" alt="Analytical Instruments and Chromatography">
+                </div>
+            </div>
+
+            <!-- 4-Card Grid for Instruments -->
+            <div class="products-cards-grid">
+                <!-- Card 1 -->
+                <div class="product-card-item">
+                    <span class="prod-card-tag">Mass Spectrometry</span>
+                    <h3>Triple Quad LC-MS/MS System</h3>
+                    <p class="prod-desc">
+                        High-sensitivity tandem mass spectrometer designed for ultra-trace quantification of pharmaceuticals, genotoxic impurities, and bioanalytical samples.
+                    </p>
+                    <div class="prod-spec-box">
+                        <div class="spec-row">
+                            <span class="spec-label">Mass Range:</span>
+                            <span class="spec-val">5 &ndash; 2,000 m/z</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Ion Source:</span>
+                            <span class="spec-val">Dual ESI / APCI</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Scan Speed:</span>
+                            <span class="spec-val">Up to 30,000 Da/s</span>
+                        </div>
+                    </div>
+                    <div class="doc-pill-wrap">
+                        <span class="doc-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Brochure</span>
+                        <span class="doc-pill">App Note</span>
+                        <span class="doc-pill">Tech Spec</span>
+                    </div>
+                    <a href="./contact.html" class="btn-card-action">Inquire About System &rarr;</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="product-card-item">
+                    <span class="prod-card-tag">Gas Chromatography</span>
+                    <h3>GC-MS/MS Triple Quad Platform</h3>
+                    <p class="prod-desc">
+                        Advanced gas chromatography mass spectrometer featuring advanced pneumatic controls, high-capacity vacuum systems, and automated headspace injection.
+                    </p>
+                    <div class="prod-spec-box">
+                        <div class="spec-row">
+                            <span class="spec-label">Ionization:</span>
+                            <span class="spec-val">EI / PCI / NCI</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Oven Range:</span>
+                            <span class="spec-val">Ambient to 450&deg;C</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Applications:</span>
+                            <span class="spec-val">VOCs, Nitrosamines</span>
+                        </div>
+                    </div>
+                    <div class="doc-pill-wrap">
+                        <span class="doc-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Brochure</span>
+                        <span class="doc-pill">Hardware Spec</span>
+                    </div>
+                    <a href="./contact.html" class="btn-card-action">Inquire About System &rarr;</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="product-card-item">
+                    <span class="prod-card-tag">Liquid Chromatography</span>
+                    <h3>UHPLC &amp; Analytical HPLC Systems</h3>
+                    <p class="prod-desc">
+                        Modular liquid chromatography systems supporting ultra-high backpressures, high-throughput autosamplers, and quaternary gradient blending.
+                    </p>
+                    <div class="prod-spec-box">
+                        <div class="spec-row">
+                            <span class="spec-label">Pressure Limit:</span>
+                            <span class="spec-val">Up to 15,000 psi</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Detectors:</span>
+                            <span class="spec-val">UV-Vis, PDA, FLD, RI</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Carryover:</span>
+                            <span class="spec-val">&lt; 0.002%</span>
+                        </div>
+                    </div>
+                    <div class="doc-pill-wrap">
+                        <span class="doc-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Brochure</span>
+                        <span class="doc-pill">Method Guide</span>
+                    </div>
+                    <a href="./contact.html" class="btn-card-action">Inquire About System &rarr;</a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="product-card-item">
+                    <span class="prod-card-tag">Spectrophotometry</span>
+                    <h3>UV-Vis &amp; Ion Chromatography</h3>
+                    <p class="prod-desc">
+                        Dual-beam optical spectrophotometers and chemical suppression IC systems engineered for compliant pharmaceutical assaying and anion profiling.
+                    </p>
+                    <div class="prod-spec-box">
+                        <div class="spec-row">
+                            <span class="spec-label">Wavelength:</span>
+                            <span class="spec-val">190 &ndash; 1100 nm</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Compliance:</span>
+                            <span class="spec-val">21 CFR Part 11</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Bandwidth:</span>
+                            <span class="spec-val">1.0 nm Optical</span>
+                        </div>
+                    </div>
+                    <div class="doc-pill-wrap">
+                        <span class="doc-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Brochure</span>
+                        <span class="doc-pill">IQ/OQ Docs</span>
+                    </div>
+                    <a href="./contact.html" class="btn-card-action">Inquire About System &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================================================= -->
+    <!--   CATEGORY 3: LABORATORY EQUIPMENT                -->
+    <!-- ================================================= -->
+    <section class="product-category-section" id="equipment">
+        <div class="products-wrapper">
+
+            <div class="category-showcase-split">
+                <div class="category-showcase-text">
+                    <span class="category-badge-pill">Category 03 &bull; Lab Infrastructure</span>
+                    <h2>Precision Laboratory Equipment &amp; Workstations</h2>
+                    <p>
+                        A reliable laboratory depends on dependable core equipment. TTPL supplies and integrates
+                        precision lab instruments—from ISO-compliant clean air containment to ultrapure water and
+                        micro-weighing systems—ensuring daily operational durability and compliance.
+                    </p>
+
+                    <div class="category-highlights-list">
+                        <div class="highlight-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+                            <span>Biosafety Cabinets &amp; Hoods</span>
+                        </div>
+                        <div class="highlight-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+                            <span>Ultrapure Water (Type 1 &amp; 2)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+                            <span>Microbalances &amp; Scales</span>
+                        </div>
+                        <div class="highlight-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+                            <span>Refrigerated Centrifuges</span>
+                        </div>
+                    </div>
+
+                    <a href="./contact.html" class="btn-solution-cta">Request Equipment Specs &rarr;</a>
+                </div>
+
+                <div class="category-showcase-image">
+                    <img src="./lab images/prod-equipment.webp" alt="Precision Laboratory Equipment and Workstations">
+                </div>
+            </div>
+
+            <!-- 4-Card Grid for Equipment -->
+            <div class="products-cards-grid">
+                <!-- Card 1 -->
+                <div class="product-card-item">
+                    <span class="prod-card-tag">Containment</span>
+                    <h3>Class II Type A2 Biosafety Workstations</h3>
+                    <p class="prod-desc">
+                        Microprocessor-controlled biological safety cabinets with dual ULPA/HEPA filtration, motorized sash, and laminar airflow for operator and product protection.
+                    </p>
+                    <div class="prod-spec-box">
+                        <div class="spec-row">
+                            <span class="spec-label">Filtration:</span>
+                            <span class="spec-val">99.999% @ 0.3&mu;m</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Airflow:</span>
+                            <span class="spec-val">70% Recirc / 30% Exh</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Sizes:</span>
+                            <span class="spec-val">3ft, 4ft, 5ft, 6ft</span>
+                        </div>
+                    </div>
+                    <div class="doc-pill-wrap">
+                        <span class="doc-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Catalog</span>
+                        <span class="doc-pill">Cert Guide</span>
+                    </div>
+                    <a href="./contact.html" class="btn-card-action">Request Quote &rarr;</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="product-card-item">
+                    <span class="prod-card-tag">Water Systems</span>
+                    <h3>Ultrapure Water Purification Systems</h3>
+                    <p class="prod-desc">
+                        Direct-feed Type 1 and Type 2 water systems producing endotoxin-free, TOC-monitored water suitable for sensitive LC-MS/MS, cell culture, and HPLC.
+                    </p>
+                    <div class="prod-spec-box">
+                        <div class="spec-row">
+                            <span class="spec-label">Resistivity:</span>
+                            <span class="spec-val">18.2 M&Omega;&middot;cm @ 25&deg;C</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">TOC:</span>
+                            <span class="spec-val">&lt; 2 ppb</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Flow Rate:</span>
+                            <span class="spec-val">Up to 2.0 L/min</span>
+                        </div>
+                    </div>
+                    <div class="doc-pill-wrap">
+                        <span class="doc-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Catalog</span>
+                        <span class="doc-pill">Filter Specs</span>
+                    </div>
+                    <a href="./contact.html" class="btn-card-action">Request Quote &rarr;</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="product-card-item">
+                    <span class="prod-card-tag">Weighing</span>
+                    <h3>Analytical &amp; Micro Balances</h3>
+                    <p class="prod-desc">
+                        Dual-range precision balances featuring automated internal motorized calibration, draft shields, and direct GLP/GMP data audit logging.
+                    </p>
+                    <div class="prod-spec-box">
+                        <div class="spec-row">
+                            <span class="spec-label">Readability:</span>
+                            <span class="spec-val">0.001 mg / 0.01 mg</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Capacity:</span>
+                            <span class="spec-val">Up to 220 g</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Interface:</span>
+                            <span class="spec-val">RS232 / USB / Ethernet</span>
+                        </div>
+                    </div>
+                    <div class="doc-pill-wrap">
+                        <span class="doc-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Catalog</span>
+                        <span class="doc-pill">ISO Guide</span>
+                    </div>
+                    <a href="./contact.html" class="btn-card-action">Request Quote &rarr;</a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="product-card-item">
+                    <span class="prod-card-tag">Sample Prep</span>
+                    <h3>High-Speed Refrigerated Centrifuges</h3>
+                    <p class="prod-desc">
+                        Versatile benchtop centrifuges with brushless induction drives, fast pre-cooling functions, and interchangeable swing-out and microplate rotors.
+                    </p>
+                    <div class="prod-spec-box">
+                        <div class="spec-row">
+                            <span class="spec-label">Max RCF:</span>
+                            <span class="spec-val">Up to 21,300 x g</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Temp Range:</span>
+                            <span class="spec-val">-11&deg;C to +40&deg;C</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Capacity:</span>
+                            <span class="spec-val">4 x 400 mL / 48 Tubes</span>
+                        </div>
+                    </div>
+                    <div class="doc-pill-wrap">
+                        <span class="doc-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Catalog</span>
+                        <span class="doc-pill">Rotor Guide</span>
+                    </div>
+                    <a href="./contact.html" class="btn-card-action">Request Quote &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================================================= -->
+    <!--   CATEGORY 4: ANALYTICAL CONSUMABLES & SUPPLIES   -->
+    <!-- ================================================= -->
+    <section class="product-category-section alt-bg" id="consumables">
+        <div class="products-wrapper">
+
+            <div class="category-showcase-split reverse">
+                <div class="category-showcase-text">
+                    <span class="category-badge-pill">Category 04 &bull; Everyday Laboratory Precision</span>
+                    <h2>Analytical Consumables &amp; Supplies</h2>
+                    <p>
+                        High-precision chromatography and spectrometry require flawless consumables. TTPL supplies
+                        HPLC/UHPLC columns, solid-phase extraction cartridges, certified reference standards, and clean
+                        vials designed to eliminate ghost peaks and minimize instrument downtime.
+                    </p>
+
+                    <div class="category-highlights-list">
+                        <div class="highlight-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+                            <span>HPLC &amp; UHPLC Columns</span>
+                        </div>
+                        <div class="highlight-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+                            <span>Certified Impurity Standards</span>
+                        </div>
+                        <div class="highlight-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+                            <span>SPE Cartridges &amp; Syringe Filters</span>
+                        </div>
+                        <div class="highlight-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+                            <span>Mass-Spec Clean Certified Vials</span>
+                        </div>
+                    </div>
+
+                    <a href="./contact.html" class="btn-solution-cta">Order Consumables &amp; Supplies &rarr;</a>
+                </div>
+
+                <div class="category-showcase-image">
+                    <img src="./lab images/prod-consumables.webp" alt="Analytical Consumables and Laboratory Supplies">
+                </div>
+            </div>
+
+            <!-- 4-Card Grid for Consumables -->
+            <div class="products-cards-grid">
+                <!-- Card 1 -->
+                <div class="product-card-item">
+                    <span class="prod-card-tag">Chromatography</span>
+                    <h3>HPLC &amp; UHPLC Columns</h3>
+                    <p class="prod-desc">
+                        Silica-based and core-shell columns with exceptional lot-to-lot reproducibility. Available in C18, C8, HILIC, Phenyl-Hexyl, and Chiral phases.
+                    </p>
+                    <div class="prod-spec-box">
+                        <div class="spec-row">
+                            <span class="spec-label">Particle Sizes:</span>
+                            <span class="spec-val">1.8&mu;m, 3&mu;m, 5&mu;m</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">pH Range:</span>
+                            <span class="spec-val">1.5 &ndash; 11.5 Stable</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Formats:</span>
+                            <span class="spec-val">50mm to 250mm L</span>
+                        </div>
+                    </div>
+                    <div class="doc-pill-wrap">
+                        <span class="doc-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Column Spec</span>
+                        <span class="doc-pill">Lot COA</span>
+                    </div>
+                    <a href="./contact.html" class="btn-card-action">Request Column Details &rarr;</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="product-card-item">
+                    <span class="prod-card-tag">Standards</span>
+                    <h3>Certified Reference &amp; Impurity Standards</h3>
+                    <p class="prod-desc">
+                        Pharmacopeial reference standards (USP/EP/IP), nitrosamine standards, and isotopic internal standards accompanied by comprehensive analytical certificates.
+                    </p>
+                    <div class="prod-spec-box">
+                        <div class="spec-row">
+                            <span class="spec-label">Purity:</span>
+                            <span class="spec-val">&ge; 98.0% Certified</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Assay Docs:</span>
+                            <span class="spec-val">NMR, HPLC, MS, TGA</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Format:</span>
+                            <span class="spec-val">Neat &amp; Solution Ampoules</span>
+                        </div>
+                    </div>
+                    <div class="doc-pill-wrap">
+                        <span class="doc-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Full COA</span>
+                        <span class="doc-pill">ISO 17034</span>
+                    </div>
+                    <a href="./contact.html" class="btn-card-action">Inquire About Standards &rarr;</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="product-card-item">
+                    <span class="prod-card-tag">Filtration</span>
+                    <h3>Solid Phase Extraction &amp; Filters</h3>
+                    <p class="prod-desc">
+                        Polymeric and silica SPE cartridges for targeted analyte enrichment, alongside premium PTFE, PVDF, and Nylon certified syringe filters.
+                    </p>
+                    <div class="prod-spec-box">
+                        <div class="spec-row">
+                            <span class="spec-label">Pore Sizes:</span>
+                            <span class="spec-val">0.22 &mu;m &amp; 0.45 &mu;m</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">SPE Phases:</span>
+                            <span class="spec-val">HLB, SCX, SAX, C18</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Extractables:</span>
+                            <span class="spec-val">Ultra-Low Background</span>
+                        </div>
+                    </div>
+                    <div class="doc-pill-wrap">
+                        <span class="doc-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Tech Data</span>
+                        <span class="doc-pill">Pack Sizes</span>
+                    </div>
+                    <a href="./contact.html" class="btn-card-action">Order Supplies &rarr;</a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="product-card-item">
+                    <span class="prod-card-tag">Sample Containment</span>
+                    <h3>Autosampler Vials &amp; High-Recovery Septa</h3>
+                    <p class="prod-desc">
+                        Type 1, Class A borosilicate 2mL vials with write-on patches, paired with pre-slit PTFE/silicone screw caps certified for zero needle-bend and low bleed.
+                    </p>
+                    <div class="prod-spec-box">
+                        <div class="spec-row">
+                            <span class="spec-label">Volume:</span>
+                            <span class="spec-val">2.0 mL (9-425 Thread)</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Glass Type:</span>
+                            <span class="spec-val">Clear &amp; Amber 33-Exp.</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Cleanliness:</span>
+                            <span class="spec-val">MS-Certified Clean</span>
+                        </div>
+                    </div>
+                    <div class="doc-pill-wrap">
+                        <span class="doc-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Spec Sheet</span>
+                        <span class="doc-pill">100/Pack</span>
+                    </div>
+                    <a href="./contact.html" class="btn-card-action">Order Supplies &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================================================= -->
+    <!--          HOW TO PROCURE / SUPPORT PATHWAY         -->
+    <!-- ================================================= -->
+    <section class="procure-pathway-section">
+        <div class="products-wrapper">
+            <div class="procure-pathway-header">
+                <span class="about-vm-badge">Streamlined &bull; Reliable &bull; Consultative</span>
+                <h2>How to Procure Through TDPL</h2>
+                <p>
+                    We provide more than catalog distribution. Our scientific specialists evaluate your application,
+                    ensure chemical and hardware compatibility, and provide complete documentation for compliance.
+                </p>
+            </div>
+
+            <div class="procure-steps-grid">
+                <!-- Step 1 -->
+                <div class="procure-step-card">
+                    <div class="procure-step-num">01</div>
+                    <h3>Technical Consultation</h3>
+                    <p>
+                        Share your project specifications, analyte details, throughput requirements, and regulatory targets with our product team.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="procure-step-card">
+                    <div class="procure-step-num">02</div>
+                    <h3>Configuration &amp; Quote</h3>
+                    <p>
+                        Receive tailored technical specifications, complete batch documentation or equipment site prep guides, and competitive quotes.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="procure-step-card">
+                    <div class="procure-step-num">03</div>
+                    <h3>Certified Logistics</h3>
+                    <p>
+                        Reliable cold-chain dispatch for enzymes and reagents, secure crating for analytical instrumentation, and verified batch COAs.
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="procure-step-card">
+                    <div class="procure-step-num">04</div>
+                    <h3>Application Support</h3>
+                    <p>
+                        Benefit from ongoing technical support, installation guidance, method troubleshooting, and preventive maintenance coordination.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================= -->
+    <!--                     CTA BANNER                    -->
+    <!-- ================================================= -->
+    <div class="products-wrapper" style="padding: 70px 24px;">
+        <section class="testing-cta-banner">
+            <div class="testing-cta-left">
+                <div class="testing-cta-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M9 3h6" />
+                        <path d="M10 3v4l-4.5 8.5A3 3 0 0 0 8.2 20h7.6a3 3 0 0 0 2.7-4.5L14 7V3" />
+                        <path d="M8 14h8" />
+                    </svg>
+                </div>
+                <div class="testing-cta-text">
+                    <h3>Need Assistance Selecting the Right Product or Technology?</h3>
+                    <p>Speak directly with a TDPL technical product specialist to discuss specifications, compatibility, and availability.</p>
+                </div>
+            </div>
+
+            <a href="./contact.html" class="testing-cta-btn">
+                Talk to a Specialist &rarr;
+            </a>
+        </section>
+    </div>
+
+    <!-- ================================================= -->
+    <!--                     FOOTER                        -->
+    <!-- ================================================= -->
+    <footer>
+        <div class="footer-container">
+            <!-- Column 1: Brand Info -->
+            <div class="footer-col footer-brand-col">
+                <img class="footer-logo" src="./TT logo white.png" alt="Transdical Technologies Pvt. Ltd. Logo">
+                <p class="footer-desc">
+                    TDPL provides integrated scientific, analytical and laboratory solutions through expertise, technology, specialized products and strategic collaborations.
+                </p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path d="M19 0H5C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM8 19H5V8h3v11zM6.5 6.5C5.7 6.5 5 5.8 5 5s.7-1.5 1.5-1.5S8 4.2 8 5s-.7 1.5-1.5 1.5zM19 19h-3v-5.5c0-1.3 0-3-1.8-3-1.8 0-2.1 1.4-2.1 2.9V19H9V8h3v1.5c.4-.9 1.5-1.8 3.2-1.8 3.4 0 3.8 2.2 3.8 5.1V19z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col">
+                <h3 class="footer-heading">Company</h3>
+                <ul class="footer-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About TDPL</a></li>
+                    <li><a href="./solutions.html">Our Solutions</a></li>
+                    <li><a href="./industries.html">Industries</a></li>
+                    <li><a href="./products.html">Products &amp; Technology</a></li>
+                    <li><a href="./expertise.html">Expertise</a></li>
+                    <li><a href="./partners.html">Partners</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Solutions -->
+            <div class="footer-col">
+                <h3 class="footer-heading">Our Solutions</h3>
+                <ul class="footer-links">
+                    <li><a href="./solutions.html#analytical-solutions">Analytical &amp; Scientific Solutions</a></li>
+                    <li><a href="./solutions.html#project-support">Project &amp; Expert Support</a></li>
+                    <li><a href="./solutions.html#enzymes-reagents">Specialized Enzymes &amp; Reagents</a></li>
+                    <li><a href="./solutions.html#instruments-technology">Laboratory Instruments &amp; Tech</a></li>
+                    <li><a href="./solutions.html#laboratory-consumables">Consumables &amp; Supplies</a></li>
+                    <li><a href="./solutions.html#calibration-maintenance">Calibration &amp; Maintenance</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact info -->
+            <div class="footer-col">
+                <h3 class="footer-contact-heading">Contact Us</h3>
+                <p class="footer-text">Transdical Technologies Pvt. Ltd. House, Sector-1, Panchkula, Haryana, India</p>
+                <p class="footer-text">
+                    <a href="mailto:bd@transdica.com" style="color: inherit; text-decoration: none;">bd@transdica.com</a>
+                </p>
+                <p class="footer-text">
+                    <a href="tel:+918130030220" style="color: inherit; text-decoration: none;">+91 8130030220</a>
+                </p>
+                <div style="margin-top: 10px;">
+                    <a href="./contact.html" class="footer-consult-btn">Talk to an Expert &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Transdical Technologies Pvt. Ltd. (TTPL). All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
+    <a href="https://wa.me/918130030220?text=Hello%20TDPL%20Team%2C%20I%20would%20like%20to%20inquire%20about%20products%20and%20technology."
+        class="whatsapp-float-btn" target="_blank" rel="noopener noreferrer" aria-label="Inquire on WhatsApp"
+        id="floating-whatsapp-btn">
+        <svg viewBox="0 0 24 24">
+            <path
+                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+        </svg>
+        <span>Discuss on WhatsApp</span>
+    </a>
+
+    <!-- Mobile Menu Navigation Toggle Script -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navUl = document.querySelector('header nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            menuToggle.classList.toggle('active');
+            navUl.classList.toggle('active');
+        });
+
+        document.addEventListener('click', function (e) {
+            if (!navUl.contains(e.target) && !menuToggle.contains(e.target)) {
+                menuToggle.classList.remove('active');
+                navUl.classList.remove('active');
+            }
+        });
+
+        navUl.querySelectorAll('a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                menuToggle.classList.remove('active');
+                navUl.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
