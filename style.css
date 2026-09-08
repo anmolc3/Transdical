@@ -8663,6 +8663,325 @@ footer {
     }
 }
 
+/* ================================================= */
+/*     PT-03: LIVE LABORATORY PIPELINE & TELEMETRY    */
+/* ================================================= */
+.pt-03 {
+  --pt-03-bg: #f8fafc;
+  --pt-03-surf: #ffffff;
+  --pt-03-surf2: #f1f5f9;
+  --pt-03-line: #e2e8f0;
+  --pt-03-ink: #0f172a;
+  --pt-03-mut: #64748b;
+  --pt-03-acc: #0284c7;
+  --pt-03-warm: #0369a1;
+  --pt-03-font-display: 'Space Grotesk', 'Outfit', -apple-system, sans-serif;
+  width: 100%;
+  padding: 85px 0;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  background: var(--pt-03-bg);
+  color: var(--pt-03-ink);
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  line-height: 1.55;
+  border-top: 1px solid var(--pt-03-line);
+  border-bottom: 1px solid var(--pt-03-line);
+  transition: background 0.3s, color 0.3s;
+}
+
+.pt-03 *,
+.pt-03 *::before,
+.pt-03 *::after {
+  box-sizing: border-box;
+}
+
+.pt-03:has(.pt-03__theme-input:checked) {
+  --pt-03-bg: #071534;
+  --pt-03-surf: #0c1e45;
+  --pt-03-surf2: #12285a;
+  --pt-03-line: #1e3a75;
+  --pt-03-ink: #f8fafc;
+  --pt-03-mut: #94a3b8;
+  --pt-03-acc: #38bdf8;
+  --pt-03-warm: #7dd3fc;
+}
+
+.pt-03__sr {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.pt-03__theme {
+  position: absolute;
+  inset-block-start: 1.5rem;
+  inset-inline-end: 1.5rem;
+  z-index: 8;
+}
+
+.pt-03__theme-input {
+  position: absolute;
+  opacity: 0;
+  inline-size: 1px;
+  block-size: 1px;
+  margin: 0;
+}
+
+.pt-03__theme-label {
+  display: grid;
+  place-items: center;
+  inline-size: 2.75rem;
+  block-size: 2.75rem;
+  border: 1px solid var(--pt-03-line);
+  border-radius: 1rem;
+  background: var(--pt-03-surf2);
+  color: var(--pt-03-mut);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pt-03__theme-label:hover {
+  color: var(--pt-03-acc);
+  border-color: var(--pt-03-acc);
+}
+
+.pt-03__theme-label svg {
+  inline-size: 1.15rem;
+  block-size: 1.15rem;
+}
+
+.pt-03__theme-input:focus-visible + .pt-03__theme-label {
+  outline: 2px solid var(--pt-03-acc);
+  outline-offset: 2px;
+}
+
+.pt-03__stage {
+  max-inline-size: 64rem;
+  margin-inline: auto;
+  padding: 0 clamp(1rem, 4vw, 2.25rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.75rem;
+}
+
+.pt-03__kicker {
+  margin: 0 0 0.5rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--pt-03-acc);
+}
+
+.pt-03__h {
+  margin: 0 0 0.65rem;
+  font-family: var(--pt-03-font-display);
+  font-size: clamp(1.6rem, 4.4vw, 2.3rem);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--pt-03-ink);
+}
+
+.pt-03__lede {
+  margin: 0;
+  max-inline-size: 46rem;
+  color: var(--pt-03-mut);
+  font-size: 1rem;
+  text-wrap: pretty;
+}
+
+.pt-03__panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.pt-03__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.pt-03__tab {
+  flex: 1 1 9rem;
+  min-inline-size: 0;
+  min-block-size: 3rem;
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--pt-03-line);
+  border-radius: 0.85rem;
+  background: var(--pt-03-surf);
+  color: var(--pt-03-ink);
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pt-03__tab:hover {
+  background: var(--pt-03-surf2);
+  border-color: var(--pt-03-acc);
+  transform: translateY(-1px);
+}
+
+.pt-03__tab:focus-visible {
+  outline: 2px solid var(--pt-03-acc);
+  outline-offset: 2px;
+}
+
+.pt-03__tab-name {
+  font-family: var(--pt-03-font-display);
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--pt-03-ink);
+}
+
+.pt-03__tab-desc {
+  font-size: 0.76rem;
+  color: var(--pt-03-mut);
+}
+
+.pt-03__readout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.75rem;
+  padding: 0.8rem 1.25rem;
+  background: var(--pt-03-surf);
+  border: 1px solid var(--pt-03-line);
+  border-radius: 0.85rem;
+}
+
+.pt-03__ro {
+  margin: 0;
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+  min-inline-size: 0;
+}
+
+.pt-03__ro-k {
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--pt-03-mut);
+}
+
+.pt-03__ro-v {
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--pt-03-acc);
+}
+
+.pt-03__viewport {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: var(--pt-03-surf);
+  border: 1px solid var(--pt-03-line);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.pt-03__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background: var(--pt-03-ink);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 200ms linear;
+}
+
+.pt-03[data-pt-03-cover="1"] .pt-03__overlay {
+  opacity: 1;
+}
+
+.pt-03__feed {
+  block-size: 22rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 1.25rem 1.4rem 1.5rem;
+}
+
+.pt-03__feed:focus-visible {
+  outline: 2px solid var(--pt-03-acc);
+  outline-offset: -3px;
+}
+
+.pt-03__route-h {
+  margin: 0 0 1rem;
+  font-family: var(--pt-03-font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--pt-03-ink);
+}
+
+.pt-03__cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.pt-03__card {
+  min-inline-size: 0;
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--pt-03-surf2);
+  border: 1px solid var(--pt-03-line);
+  border-radius: 0.75rem;
+  transition: transform 0.15s, border-color 0.15s;
+}
+
+.pt-03__card:hover {
+  border-color: var(--pt-03-acc);
+  transform: translateX(3px);
+}
+
+.pt-03__card b {
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 0.92rem;
+  color: var(--pt-03-ink);
+}
+
+.pt-03__card span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--pt-03-acc);
+}
+
+.pt-03__card p {
+  margin: 0.2rem 0 0;
+  font-size: 0.88rem;
+  color: var(--pt-03-mut);
+  line-height: 1.45;
+}
+
+.pt-03__note {
+  margin: 0;
+  font-size: 0.86rem;
+  color: var(--pt-03-mut);
+  max-inline-size: 52rem;
+  text-wrap: pretty;
+  line-height: 1.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pt-03__overlay {
+    transition-duration: 60ms;
+  }
+}
+
 
 
 

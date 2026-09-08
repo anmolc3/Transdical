@@ -380,6 +380,67 @@
   </section>
 
   <!-- ================================================= -->
+  <!--       SECTION 1.5: LIVE ANALYTICAL TELEMETRY      -->
+  <!-- ================================================= -->
+  <section class="pt-03" aria-labelledby="pt-03-h">
+    <div class="pt-03__theme">
+      <input class="pt-03__theme-input" type="checkbox" id="pt-03-theme">
+      <label class="pt-03__theme-label" for="pt-03-theme">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 3.5a8.5 8.5 0 0 0 0 17Z" fill="currentColor"/></svg>
+        <span class="pt-03__sr">Toggle dark theme</span>
+      </label>
+    </div>
+
+    <div class="pt-03__stage">
+      <header class="pt-03__head">
+        <p class="pt-03__kicker">Live Pipeline &amp; Telemetry / 03</p>
+        <h2 class="pt-03__h" id="pt-03-h">Real-Time Analytical Execution &amp; Batch Telemetry</h2>
+        <p class="pt-03__lede">Track live sample dispatches, chromatography runs, and bioanalytical protocols. Scroll the telemetry feed below, then run each state restoration policy to observe seamless scroll capture without flicker.</p>
+      </header>
+
+      <div class="pt-03__panel">
+        <nav class="pt-03__tabs" aria-label="Scroll policies">
+          <button class="pt-03__tab" type="button" data-pt-03-policy="reset">
+            <span class="pt-03__tab-name">Live Feed</span><span class="pt-03__tab-desc">reset to latest batch</span>
+          </button>
+          <button class="pt-03__tab" type="button" data-pt-03-policy="restore">
+            <span class="pt-03__tab-name">Historical Runs</span><span class="pt-03__tab-desc">restore saved offset</span>
+          </button>
+          <button class="pt-03__tab" type="button" data-pt-03-policy="preserve">
+            <span class="pt-03__tab-name">QC Audit Filter</span><span class="pt-03__tab-desc">preserve scroll position</span>
+          </button>
+        </nav>
+
+        <div class="pt-03__readout">
+          <p class="pt-03__ro"><span class="pt-03__ro-k">scrollTop</span><span class="pt-03__ro-v" id="pt-03-now">0px</span></p>
+          <p class="pt-03__ro"><span class="pt-03__ro-k">saved</span><span class="pt-03__ro-v" id="pt-03-saved">&mdash;</span></p>
+          <p class="pt-03__ro"><span class="pt-03__ro-k">last policy</span><span class="pt-03__ro-v" id="pt-03-policy">idle</span></p>
+        </div>
+
+        <div class="pt-03__viewport">
+          <div class="pt-03__overlay" aria-hidden="true"></div>
+          <div class="pt-03__feed" id="pt-03-feed" tabindex="-1">
+            <main class="pt-03__route" id="pt-03-route">
+              <h3 class="pt-03__route-h" id="pt-03-route-h">Active Analytical Batches</h3>
+              <ul class="pt-03__cards">
+                <li class="pt-03__card"><b>LCMS-TR-9042</b><span>LC-MS/MS &bull; Bioanalytical Assay &bull; 4m ago</span><p>Quantitative plasma profiling completed. Accuracy &plusmn;0.8%. Verified by Senior Analyst.</p></li>
+                <li class="pt-03__card"><b>GCMS-VOC-118</b><span>GC-MS/MS &bull; Pharma Trace Residues &bull; 12m ago</span><p>USP &lt;467&gt; Residual solvents screening. Zero headspace leaks detected across 24 vials.</p></li>
+                <li class="pt-03__card"><b>HPLC-BIO-304</b><span>HPLC &bull; Peptide Purity Check &bull; 1h ago</span><p>Reversed-phase C18 column. Purity 99.4%, resolution factor 2.4. Protocol PV-2026 passed.</p></li>
+                <li class="pt-03__card"><b>ENZ-ASSAY-77</b><span>Biotech &bull; Therapeutic Enzyme Activity &bull; 2h ago</span><p>Recombinant enzyme turnover assay. Kinetic Km verified within &plusmn;1.5% target specification.</p></li>
+                <li class="pt-03__card"><b>FOOD-TOX-512</b><span>Food Safety &bull; Multi-Pesticide Residue &bull; 3h ago</span><p>Screened 320 compounds on exported tea extracts. 100% compliance with EU &amp; FSSAI MRLs.</p></li>
+                <li class="pt-03__card"><b>MICRO-ENV-89</b><span>Environmental &bull; Heavy Metals ICP-MS &bull; 5h ago</span><p>Industrial effluent testing for Lead, Cadmium, Arsenic. LOD down to 0.05 ppb verified.</p></li>
+                <li class="pt-03__card"><b>STAB-ICH-201</b><span>Formulation &bull; Accelerated Stability &bull; 8h ago</span><p>Zone IVb 40&deg;C / 75% RH Month-3 checkpoint. Zero physical phase separation or degradation.</p></li>
+                <li class="pt-03__card"><b>CLEAN-VAL-04</b><span>QC Cleaning &bull; TOC Swab Recovery &bull; 11h ago</span><p>Total Organic Carbon swab recovery assay at 95.4% efficiency. Cleanroom line cleared.</p></li>
+              </ul>
+            </main>
+          </div>
+        </div>
+        <p class="pt-03__note">Capture happens before the swap and the write lands while the overlay is opaque, so no intermediate scroll position is ever painted.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================= -->
   <!--            SECTION 2: INDUSTRIES WE SERVE         -->
   <!-- ================================================= -->
   <section class="home-industries-bar" style="padding: 85px 0; background: #071534;">
@@ -746,6 +807,61 @@
           setTimeout(loop, 85);
         }
       }, 2500);
+    })();
+  </script>
+
+  <!-- PT-03: Real-Time Laboratory Telemetry Controller -->
+  <script>
+    (function () {
+      const root = document.querySelector('.pt-03');
+      if (!root) return;
+      const feed = root.querySelector('#pt-03-feed');
+      const route = root.querySelector('#pt-03-route');
+      const out = {
+        now: root.querySelector('#pt-03-now'),
+        saved: root.querySelector('#pt-03-saved'),
+        pol: root.querySelector('#pt-03-policy')
+      };
+      const reduce = matchMedia('(prefers-reduced-motion: reduce)');
+      const store = new Map();
+      const timers = [];
+      const titles = {
+        reset: 'Live Feed &mdash; Latest Analytical Batches',
+        restore: 'Historical Runs &mdash; Restored Offset',
+        preserve: 'QC Audit Filter &mdash; Preserved Position'
+      };
+      const paint = () => {
+        if (out.now && feed) out.now.textContent = Math.round(feed.scrollTop) + 'px';
+      };
+      if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+      if (feed) feed.addEventListener('scroll', paint, { passive: true });
+
+      function apply(policy) {
+        if (!feed || !route) return;
+        const captured = feed.scrollTop;
+        store.set('deployments', captured);
+        if (out.saved) out.saved.textContent = Math.round(captured) + 'px';
+        if (out.pol) out.pol.textContent = policy;
+        root.setAttribute('data-pt-03-cover', '1');
+        timers.push(setTimeout(() => {
+          const h = route.querySelector('.pt-03__route-h');
+          if (h && titles[policy]) h.innerHTML = titles[policy];
+          if (policy === 'reset') feed.scrollTop = 0;
+          if (policy === 'restore') feed.scrollTop = Math.min(store.get('deployments') || 0, feed.scrollHeight - feed.clientHeight);
+          feed.focus({ preventScroll: true });
+          paint();
+          root.setAttribute('data-pt-03-cover', '0');
+        }, reduce.matches ? 30 : 210));
+      }
+
+      root.querySelectorAll('[data-pt-03-policy]').forEach((b) => {
+        b.addEventListener('click', () => apply(b.getAttribute('data-pt-03-policy')));
+      });
+      paint();
+      root.__ptCleanup = () => {
+        timers.forEach(clearTimeout);
+        if (feed) feed.removeEventListener('scroll', paint);
+      };
     })();
   </script>
 </body>
