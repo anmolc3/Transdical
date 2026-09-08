@@ -4,7 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Solutions - Integrated Scientific Solutions - Transdical Technologies Pvt. Ltd.</title>
+    <title>Analytical Solutions, LC-MS/MS &amp; GC-MS/MS Validation | Transdica</title>
+    <meta name="description"
+        content="Explore Transdica's end-to-end analytical solutions: LC-MS/MS, GC-MS/MS, analytical method development, ICH method validation, calibration, and laboratory support in India.">
+    <link rel="canonical" href="https://transdica.com/solutions.html">
+
+    <!-- Open Graph / Social Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://transdica.com/solutions.html">
+    <meta property="og:title" content="Analytical Solutions, LC-MS/MS &amp; GC-MS/MS Validation | Transdica">
+    <meta property="og:description"
+        content="Integrated analytical method development, LC-MS/MS, GC-MS/MS, calibration, and biotechnology solutions across India.">
+    <meta property="og:image" content="https://transdica.com/TT%20logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Analytical Solutions, LC-MS/MS &amp; GC-MS/MS Validation | Transdica">
+    <meta name="twitter:description"
+        content="Integrated analytical method development, LC-MS/MS, GC-MS/MS, calibration, and biotechnology solutions across India.">
+    <meta name="twitter:image" content="https://transdica.com/TT%20logo.png">
+
+    <!-- Structured Data Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://transdica.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Solutions",
+              "item": "https://transdica.com/solutions.html"
+            }
+          ]
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Analytical & Laboratory Solutions",
+          "provider": {
+            "@type": "Organization",
+            "name": "Transdical Technologies Pvt. Ltd.",
+            "url": "https://transdica.com/"
+          },
+          "areaServed": "IN",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Analytical Capabilities",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "LC-MS/MS Analytical Solutions & Nitrosamine Profiling"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "GC-MS/MS Residual Solvents & Volatile Analysis"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Analytical Method Development & ICH Validation"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+    </script>
 
     <!-- Google Fonts Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -148,11 +227,16 @@
                             </svg>
                             <span>Analytical strategy</span>
                         </div>
-                        <div class="solution-list-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                <path d="M20 6 9 17l-5-5" />
-                            </svg>
-                            <span>Method development support</span>
+                        <div class="solution-list-item" style="flex-direction: column; align-items: flex-start; gap: 6px;">
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <path d="M20 6 9 17l-5-5" />
+                                </svg>
+                                <span style="font-weight: 600;">Method development support</span>
+                            </div>
+                            <button type="button" class="tech-modal-trigger-btn" onclick="openTdplModal('modal-method-val')">
+                                View ICH Protocol &rarr;
+                            </button>
                         </div>
                         <div class="solution-list-item">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -160,23 +244,33 @@
                             </svg>
                             <span>Analytical method troubleshooting</span>
                         </div>
-                        <div class="solution-list-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                <path d="M20 6 9 17l-5-5" />
-                            </svg>
-                            <span>LC-MS/MS applications</span>
+                        <div class="solution-list-item" style="flex-direction: column; align-items: flex-start; gap: 6px;">
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <path d="M20 6 9 17l-5-5" />
+                                </svg>
+                                <span style="font-weight: 600;">LC-MS/MS applications</span>
+                            </div>
+                            <button type="button" class="tech-modal-trigger-btn" onclick="openTdplModal('modal-lcms')">
+                                Explore LC-MS/MS Deep-Dive &rarr;
+                            </button>
                         </div>
                         <div class="solution-list-item">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                                 <path d="M20 6 9 17l-5-5" />
                             </svg>
-                            <span>HPLC & UHPLC applications</span>
+                            <span>HPLC &amp; UHPLC applications</span>
                         </div>
-                        <div class="solution-list-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                <path d="M20 6 9 17l-5-5" />
-                            </svg>
-                            <span>GC-MS/MS applications</span>
+                        <div class="solution-list-item" style="flex-direction: column; align-items: flex-start; gap: 6px;">
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <path d="M20 6 9 17l-5-5" />
+                                </svg>
+                                <span style="font-weight: 600;">GC-MS/MS applications</span>
+                            </div>
+                            <button type="button" class="tech-modal-trigger-btn" onclick="openTdplModal('modal-gcms')">
+                                Explore GC-MS/MS Deep-Dive &rarr;
+                            </button>
                         </div>
                         <div class="solution-list-item">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -702,11 +796,226 @@
             <path
                 d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
         </svg>
-        <span>Discuss Your Project</span>
-    </a>
+    <!-- ================================================= -->
+    <!--            INTERACTIVE TECHNICAL MODALS             -->
+    <!-- ================================================= -->
 
-    <!-- Mobile Menu Navigation Toggle Script -->
+    <!-- 1. LC-MS/MS Deep-Dive Modal -->
+    <div class="tdpl-modal-overlay" id="modal-lcms" role="dialog" aria-modal="true" aria-labelledby="modal-lcms-title">
+        <div class="tdpl-modal-card">
+            <button class="tdpl-modal-close" onclick="closeTdplModal('modal-lcms')" aria-label="Close modal">&times;</button>
+            <span class="tdpl-modal-badge">High-Resolution Mass Spectrometry</span>
+            <h3 class="tdpl-modal-title" id="modal-lcms-title">LC-MS/MS Analytical Solutions &amp; Ultra-Trace Quantitation</h3>
+            <p class="tdpl-modal-subtitle">
+                Liquid Chromatography coupled with Tandem Mass Spectrometry (LC-MS/MS) delivers ultimate sensitivity, selectivity, and structural elucidation for complex biopharmaceutical, pharmaceutical, and chemical challenges.
+            </p>
+
+            <div class="tdpl-modal-grid-2">
+                <div class="tdpl-modal-spec-box">
+                    <h4>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" />
+                            <line x1="12" y1="17" x2="12" y2="21" />
+                        </svg>
+                        Instrumentation &amp; Specs
+                    </h4>
+                    <ul class="tdpl-modal-spec-list">
+                        <li><strong>Configurations:</strong> Triple Quadrupole (LC-MS/MS) &amp; High-Resolution Q-TOF</li>
+                        <li><strong>Ionization:</strong> Electrospray Ionization (ESI &plusmn;) and APCI</li>
+                        <li><strong>Detection Limits:</strong> Sub-ppb (parts-per-billion) and sub-picogram quantitation</li>
+                        <li><strong>Scan Modes:</strong> MRM, Precursor/Product Ion Scans, Neutral Loss, MS/MS</li>
+                        <li><strong>Chromatography:</strong> UHPLC systems operating up to 15,000+ psi</li>
+                        <li><strong>Compliance:</strong> 21 CFR Part 11 electronic records &amp; ALCOA+ data integrity</li>
+                    </ul>
+                </div>
+
+                <div class="tdpl-modal-spec-box">
+                    <h4>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                        </svg>
+                        Flagship Applications
+                    </h4>
+                    <ul class="tdpl-modal-spec-list">
+                        <li><strong>Nitrosamine Impurities:</strong> Trace NDMA, NDEA, NDIPA, NDBA, NMBA per FDA/EMA</li>
+                        <li><strong>Genotoxic Impurities:</strong> Ultra-trace identification &amp; quantitation (ICH M7)</li>
+                        <li><strong>Bioanalysis (PK/PD):</strong> High-throughput bioequivalence and drug quantification</li>
+                        <li><strong>Biologics &amp; Peptides:</strong> Intact mass confirmation, peptide mapping, deamidation</li>
+                        <li><strong>Extractables &amp; Leachables:</strong> Non-volatile profiling of container systems</li>
+                        <li><strong>Isomeric Separations:</strong> Chiral HPLC-MS/MS method development</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tdpl-modal-footer-cta">
+                <span class="tdpl-modal-footer-info">Sector-1, Panchkula • Full Method Transfer &amp; Technical Support</span>
+                <a href="./contact.html?interest=lc-ms-ms" class="tdpl-modal-btn">
+                    Request LC-MS/MS Consultation &rarr;
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. GC-MS/MS Deep-Dive Modal -->
+    <div class="tdpl-modal-overlay" id="modal-gcms" role="dialog" aria-modal="true" aria-labelledby="modal-gcms-title">
+        <div class="tdpl-modal-card">
+            <button class="tdpl-modal-close" onclick="closeTdplModal('modal-gcms')" aria-label="Close modal">&times;</button>
+            <span class="tdpl-modal-badge">Gas Chromatography &amp; Volatiles</span>
+            <h3 class="tdpl-modal-title" id="modal-gcms-title">GC-MS/MS Analytical Solutions &amp; Volatile Impurity Profiling</h3>
+            <p class="tdpl-modal-subtitle">
+                Gas Chromatography coupled with Tandem Mass Spectrometry (GC-MS/MS) and automated Headspace (HS-GC-MS/MS) delivers premier separation and identification for volatile and semi-volatile matrices.
+            </p>
+
+            <div class="tdpl-modal-grid-2">
+                <div class="tdpl-modal-spec-box">
+                    <h4>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                        </svg>
+                        Technical Capabilities
+                    </h4>
+                    <ul class="tdpl-modal-spec-list">
+                        <li><strong>Ionization:</strong> Electron Ionization (EI) &amp; Positive/Negative Chemical Ionization (CI)</li>
+                        <li><strong>Sample Prep:</strong> Static &amp; Dynamic Headspace (HS), SPME, Direct Injection</li>
+                        <li><strong>Selectivity:</strong> Multiple Reaction Monitoring (MRM) eliminating matrix noise</li>
+                        <li><strong>Library Matching:</strong> High-resolution NIST and Wiley mass spectral libraries</li>
+                        <li><strong>Capillary Columns:</strong> DB-624, DB-WAX, HP-5MS, chiral capillary stationary phases</li>
+                    </ul>
+                </div>
+
+                <div class="tdpl-modal-spec-box">
+                    <h4>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                        </svg>
+                        Critical Workflows
+                    </h4>
+                    <ul class="tdpl-modal-spec-list">
+                        <li><strong>USP &lt;467&gt; Residual Solvents:</strong> Class 1, 2, and 3 solvents in APIs &amp; excipients</li>
+                        <li><strong>Pesticide Multi-Residue:</strong> 400+ target compound screening in botanicals/food</li>
+                        <li><strong>Volatile Nitrosamines:</strong> Ultra-trace gas-phase detection of NDMA and NDEA</li>
+                        <li><strong>Terpenes &amp; Fragrances:</strong> High-resolution aroma and VOC characterization</li>
+                        <li><strong>Polymer Outgassing:</strong> Headspace analysis of pharmaceutical packaging elastomers</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tdpl-modal-footer-cta">
+                <span class="tdpl-modal-footer-info">Tailored method development, validation &amp; sample feasibility</span>
+                <a href="./contact.html?interest=gc-ms-ms" class="tdpl-modal-btn">
+                    Request GC-MS/MS Consultation &rarr;
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Method Development & Validation Modal -->
+    <div class="tdpl-modal-overlay" id="modal-method-val" role="dialog" aria-modal="true" aria-labelledby="modal-method-title">
+        <div class="tdpl-modal-card">
+            <button class="tdpl-modal-close" onclick="closeTdplModal('modal-method-val')" aria-label="Close modal">&times;</button>
+            <span class="tdpl-modal-badge">ICH Q2(R2) &amp; USP &lt;1225&gt; Compliant</span>
+            <h3 class="tdpl-modal-title" id="modal-method-title">Analytical Method Development &amp; Validation Lifecycle</h3>
+            <p class="tdpl-modal-subtitle">
+                Systematic, regulatory-ready method development and validation services designed to support drug development, stability testing, and commercial release across global markets.
+            </p>
+
+            <div class="tdpl-modal-grid-2">
+                <div class="tdpl-modal-spec-box">
+                    <h4>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 11 12 14 22 4" />
+                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                        </svg>
+                        Validation Parameters Tested
+                    </h4>
+                    <ul class="tdpl-modal-spec-list">
+                        <li><strong>Specificity &amp; Forced Degradation:</strong> Acid, base, peroxide, heat, and photolytic stress</li>
+                        <li><strong>Linearity &amp; Range:</strong> 5–8 concentration levels with correlation $R^2 \ge 0.999$</li>
+                        <li><strong>Accuracy &amp; Recovery:</strong> Triplicate tests across 50%, 100%, and 150% nominal levels</li>
+                        <li><strong>Precision:</strong> Repeatability (intra-day) and intermediate precision (inter-day/analyst)</li>
+                        <li><strong>LOD &amp; LOQ:</strong> Signal-to-noise ratio and standard deviation of response methods</li>
+                        <li><strong>Robustness:</strong> Mobile phase ratio, pH variation, flow rate, and temperature bounds</li>
+                    </ul>
+                </div>
+
+                <div class="tdpl-modal-spec-box">
+                    <h4>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                        Workflow &amp; Deliverables
+                    </h4>
+                    <ul class="tdpl-modal-spec-list">
+                        <li><strong>Feasibility Screening:</strong> Physicochemical property review &amp; column scouting</li>
+                        <li><strong>Optimization:</strong> Gradient tuning, buffer selection, resolution maximization</li>
+                        <li><strong>Stress Testing:</strong> Peak purity evaluation via DAD and Mass Spectrometry</li>
+                        <li><strong>Execution:</strong> Pre-approved validation protocol under strict QA oversight</li>
+                        <li><strong>Audit-Ready Dossier:</strong> Comprehensive ICH Q2(R2) technical report &amp; SOP</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tdpl-modal-footer-cta">
+                <span class="tdpl-modal-footer-info">Full technical transfer to client or partner laboratories</span>
+                <a href="./contact.html?interest=method-validation" class="tdpl-modal-btn">
+                    Discuss Method Development Project &rarr;
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Navigation Toggle Script & Modal Handler -->
     <script>
+        // Modal functions
+        function openTdplModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeTdplModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Close on clicking overlay outside card
+        document.querySelectorAll('.tdpl-modal-overlay').forEach(modal => {
+            modal.addEventListener('click', function (e) {
+                if (e.target === modal) {
+                    closeTdplModal(modal.id);
+                }
+            });
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.tdpl-modal-overlay.active').forEach(modal => {
+                    closeTdplModal(modal.id);
+                });
+            }
+        });
+
+        // Auto open if URL hash matches
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash;
+            if (hash === '#modal-lcms' || hash === '#lcms-modal') {
+                openTdplModal('modal-lcms');
+            } else if (hash === '#modal-gcms' || hash === '#gcms-modal') {
+                openTdplModal('modal-gcms');
+            } else if (hash === '#modal-method-val' || hash === '#method-modal') {
+                openTdplModal('modal-method-val');
+            }
+        });
+
         (function () {
             function initMobileMenu() {
                 const menuToggle = document.querySelector('.menu-toggle');

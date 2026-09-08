@@ -1,0 +1,10 @@
+# robots.txt for Transdical Technologies Pvt. Ltd. (https://transdica.com)
+User-agent: *
+Allow: /
+
+# Disallow dotfiles and internal folders
+Disallow: /.git/
+Disallow: /.vscode/
+
+# Sitemap Location
+Sitemap: https://transdica.com/sitemap.xml

@@ -4,7 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Transdical Technologies Pvt. Ltd.</title>
+    <title>Contact Transdica | Request Scientific Consultation &amp; Quotes</title>
+    <meta name="description"
+        content="Get in touch with Transdica (TTPL) in Panchkula, Haryana. Request a scientific consultation, inquiry for instruments/enzymes, or discuss method validation support.">
+    <link rel="canonical" href="https://transdica.com/contact.html">
+
+    <!-- Open Graph / Social Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://transdica.com/contact.html">
+    <meta property="og:title" content="Contact Transdica | Request Scientific Consultation &amp; Quotes">
+    <meta property="og:description"
+        content="Connect with Transdica's technical leadership for method development, instrument procurement, specialized enzymes, and consultative scientific support.">
+    <meta property="og:image" content="https://transdica.com/TT%20logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Transdica | Request Scientific Consultation &amp; Quotes">
+    <meta name="twitter:description"
+        content="Connect with Transdica's technical leadership for method development, instrument procurement, specialized enzymes, and consultative scientific support.">
+    <meta name="twitter:image" content="https://transdica.com/TT%20logo.png">
+
+    <!-- JSON-LD Structured Data Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://transdica.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Contact",
+              "item": "https://transdica.com/contact.html"
+            }
+          ]
+        },
+        {
+          "@type": "ContactPage",
+          "@id": "https://transdica.com/contact.html#contactpage",
+          "url": "https://transdica.com/contact.html",
+          "name": "Contact Transdical Technologies Pvt. Ltd.",
+          "description": "Contact channel for Transdica Technologies Pvt. Ltd. (TTPL) in Sector-1, Panchkula, Haryana.",
+          "mainEntity": {
+            "@type": "LocalBusiness",
+            "name": "Transdical Technologies Pvt. Ltd.",
+            "telephone": "+918130030220",
+            "email": "bd@transdica.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Transdical Technologies Pvt. Ltd. House, Sector-1",
+              "addressLocality": "Panchkula",
+              "addressRegion": "Haryana",
+              "addressCountry": "IN"
+            }
+          }
+        }
+      ]
+    }
+    </script>
 
     <!-- Google Fonts Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -253,6 +315,18 @@
                                 <label>Areas of Interest / Support Required</label>
                                 <div class="contact-services-grid">
                                     <label class="service-check-item">
+                                        <input type="checkbox" name="services" value="LC-MS/MS Solutions" id="check-lcms">
+                                        <span>LC-MS/MS Solutions</span>
+                                    </label>
+                                    <label class="service-check-item">
+                                        <input type="checkbox" name="services" value="GC-MS/MS Solutions" id="check-gcms">
+                                        <span>GC-MS/MS Solutions</span>
+                                    </label>
+                                    <label class="service-check-item">
+                                        <input type="checkbox" name="services" value="Method Development & Validation" id="check-method">
+                                        <span>Method Validation</span>
+                                    </label>
+                                    <label class="service-check-item">
                                         <input type="checkbox" name="services" value="Analytical Solutions">
                                         <span>Analytical Solutions</span>
                                     </label>
@@ -261,19 +335,19 @@
                                         <span>Project &amp; Expert Support</span>
                                     </label>
                                     <label class="service-check-item">
-                                        <input type="checkbox" name="services" value="Specialized Enzymes & Reagents">
+                                        <input type="checkbox" name="services" value="Specialized Enzymes & Reagents" id="check-enzymes">
                                         <span>Specialized Enzymes</span>
                                     </label>
                                     <label class="service-check-item">
-                                        <input type="checkbox" name="services" value="Laboratory Instruments">
+                                        <input type="checkbox" name="services" value="Laboratory Instruments" id="check-instruments">
                                         <span>Laboratory Instruments</span>
                                     </label>
                                     <label class="service-check-item">
-                                        <input type="checkbox" name="services" value="Laboratory Consumables">
+                                        <input type="checkbox" name="services" value="Laboratory Consumables" id="check-consumables">
                                         <span>Consumables &amp; Standards</span>
                                     </label>
                                     <label class="service-check-item">
-                                        <input type="checkbox" name="services" value="Calibration & Maintenance">
+                                        <input type="checkbox" name="services" value="Calibration & Maintenance" id="check-calibration">
                                         <span>Calibration &amp; Maintenance</span>
                                     </label>
                                     <label class="service-check-item">
@@ -450,6 +524,44 @@
                 menuToggle.classList.remove('active');
                 navUl.classList.remove('active');
             });
+        });
+
+        // Auto-select checkboxes based on URL parameter ?interest=...
+        window.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const interest = params.get('interest');
+            const descField = document.getElementById('contact-description');
+
+            if (interest) {
+                if (interest.toLowerCase().includes('lc-ms') || interest === 'lcms') {
+                    const cb = document.getElementById('check-lcms');
+                    if (cb) cb.checked = true;
+                    if (descField && !descField.value) {
+                        descField.value = "Inquiry regarding LC-MS/MS analytical solutions / method development / trace impurity profiling.";
+                    }
+                } else if (interest.toLowerCase().includes('gc-ms') || interest === 'gcms') {
+                    const cb = document.getElementById('check-gcms');
+                    if (cb) cb.checked = true;
+                    if (descField && !descField.value) {
+                        descField.value = "Inquiry regarding GC-MS/MS volatile impurity analysis / USP <467> residual solvents / pesticide screening.";
+                    }
+                } else if (interest.toLowerCase().includes('method') || interest === 'validation') {
+                    const cb = document.getElementById('check-method');
+                    if (cb) cb.checked = true;
+                    if (descField && !descField.value) {
+                        descField.value = "Inquiry regarding analytical method development & ICH Q2(R2) validation lifecycle support.";
+                    }
+                } else if (interest.toLowerCase().includes('enzyme')) {
+                    const cb = document.getElementById('check-enzymes');
+                    if (cb) cb.checked = true;
+                } else if (interest.toLowerCase().includes('instrument')) {
+                    const cb = document.getElementById('check-instruments');
+                    if (cb) cb.checked = true;
+                } else if (interest.toLowerCase().includes('consumable')) {
+                    const cb = document.getElementById('check-consumables');
+                    if (cb) cb.checked = true;
+                }
+            }
         });
     </script>
 </body>
