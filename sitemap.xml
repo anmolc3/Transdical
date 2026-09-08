@@ -60,6 +60,14 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Testing & Laboratory Tasks -->
+  <url>
+    <loc>https://transdica.com/testing.html</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Contact & Consultation Request -->
   <url>
     <loc>https://transdica.com/contact.html</loc>
