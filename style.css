@@ -188,80 +188,122 @@ body {
 }
 
 header {
-    background-color: rgb(249, 249, 250);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    box-shadow: 0 2px 12px rgba(15, 23, 42, 0.08);
     position: sticky;
     top: 0;
     z-index: 1000;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.navbar-container {
+    width: 100%;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 10px 20px;
+    padding: 0 32px;
+    height: 78px;
     position: relative;
+    box-sizing: border-box;
+}
+
+.logo-image {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.logo {
+    height: 48px;
+    width: auto;
+    max-width: 220px;
+    display: block;
+    object-fit: contain;
+    transition: transform 0.25s ease;
+}
+
+.logo:hover {
+    transform: scale(1.03);
 }
 
 nav ul {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
 }
 
 nav li a {
-    display: block;
-    color: #160e6f;
-    padding: 12px 16px;
+    display: inline-flex;
+    align-items: center;
+    color: #1e293b;
+    padding: 8px 12px;
     text-decoration: none;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 600;
     border-radius: 8px;
-    transition: 0.3s;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+    position: relative;
 }
 
 nav li a:hover {
-    color: rgb(10, 22, 90);
-    transform: translateY(-2px);
+    color: #0284c7;
+    background-color: #f0f9ff;
+    transform: translateY(-1px);
 }
 
 nav li a.active {
     color: #0284c7;
     font-weight: 700;
+    background-color: #f0f9ff;
     position: relative;
 }
 
 nav li a.active::after {
     content: '';
     position: absolute;
-    bottom: 6px;
-    left: 16px;
-    right: 16px;
+    bottom: -2px;
+    left: 12px;
+    right: 12px;
     height: 2.5px;
     background-color: #0284c7;
     border-radius: 2px;
 }
 
-.logo {
-    height: 55px;
-    width: auto;
-    display: block;
-    transition: 0.3s;
-}
-
-.logo:hover{
-    transform: scale(1.05);
-}
-
 .button-contact {
-    background-color: #170f75;
-    color:antiquewhite;
+    background: linear-gradient(135deg, #0b1f4b 0%, #0369a1 100%) !important;
+    color: #ffffff !important;
+    padding: 9px 20px !important;
+    border-radius: 999px !important;
+    font-size: 13.5px !important;
+    font-weight: 700 !important;
+    margin-left: 8px !important;
+    white-space: nowrap !important;
+    box-shadow: 0 4px 14px rgba(3, 105, 161, 0.25) !important;
+    transition: all 0.25s ease !important;
 }
 
-.button-contact:hover{
-    color:antiquewhite;
+.button-contact:hover {
+    background: linear-gradient(135deg, #0369a1 0%, #0284c7 100%) !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 18px rgba(3, 105, 161, 0.35) !important;
 }
 
 /* =========================================================
@@ -304,7 +346,7 @@ nav li a.active::after {
     transform: translateY(-9.5px) rotate(-45deg);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1160px) {
     .menu-toggle {
         display: flex;
     }
@@ -3278,7 +3320,7 @@ footer {
 }
 
 /* =========================================================
-   CONTACT PAGE (TDPL / TRANSDICAL THEME)
+   CONTACT PAGE (TTPL / TRANSDICAL THEME)
    ========================================================= */
 
 .contact-hero-section {
@@ -5809,7 +5851,7 @@ textarea.contact-field-control {
     margin: 0;
 }
 
-/* Why Choose TDPL (About Page) */
+/* Why Choose TTPL (About Page) */
 .why-tdpl-section {
     padding: 80px 0;
     background: #f8fafc;
@@ -5965,16 +6007,22 @@ textarea.contact-field-control {
 
 /* Navbar & Top Bar alignment */
 nav {
-    max-width: 1240px !important;
+    max-width: 1440px !important;
+    width: 100% !important;
     margin: 0 auto !important;
-    padding: 12px 24px !important;
+    padding: 0 32px !important;
+    height: 78px !important;
     box-sizing: border-box !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
 }
 
 .top-bar .container {
-    max-width: 1240px !important;
+    max-width: 1440px !important;
+    width: 100% !important;
     margin: 0 auto !important;
-    padding: 8px 24px !important;
+    padding: 8px 32px !important;
     box-sizing: border-box !important;
 }
 
@@ -6511,7 +6559,7 @@ footer {
     line-height: 1.6;
 }
 
-/* Why TDPL Section (5 Pillars) */
+/* Why TTPL Section (5 Pillars) */
 .home-why-tdpl-section {
     padding: 95px 0;
     background: #ffffff;
@@ -6691,7 +6739,7 @@ footer {
 }
 
 /* =========================================================
-   PHASE 2: ABOUT TDPL PAGE STYLES
+   PHASE 2: ABOUT TTPL PAGE STYLES
    ========================================================= */
 
 .about-page-hero {
