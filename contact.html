@@ -2,628 +2,456 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - Transdical Technologies Pvt. Ltd.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Transdical Technologies Pvt. Ltd.</title>
 
-  <!-- Google Fonts Preconnect -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@500;600;700&display=swap"
-    rel="stylesheet">
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
 
-  <!-- Favicon Links -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./TT favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./TT favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./TT favicon/favicon-16x16.png">
-  <link rel="shortcut icon" href="./TT favicon/favicon.ico">
-  <link rel="manifest" href="./TT favicon/site.webmanifest">
+    <!-- Favicon Links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./TT favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./TT favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./TT favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="./TT favicon/favicon.ico">
+    <link rel="manifest" href="./TT favicon/site.webmanifest">
 
-  <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-  <!-- ================= PAGE LOADER ================= -->
-  <div id="page-loader">
-    <div class="loader"></div>
-  </div>
-  <script>
-    window.addEventListener('load', () => {
-      const loader = document.getElementById('page-loader');
-      loader.classList.add('fade-out');
-    });
-  </script>
+    <!-- ================= PAGE LOADER ================= -->
+    <div id="page-loader">
+        <div class="loader"></div>
+    </div>
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('page-loader');
+            loader.classList.add('fade-out');
+        });
+    </script>
 
-  <!-- ================= TOP BAR ================= -->
-  <section class="top-bar">
-    <div class="container top-bar-content">
-      <div class="top-bar-right">
-        <a href="tel:+918130030220" class="top-bar-item" id="top-phone">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
+    <!-- ================= TOP BAR ================= -->
+    <section class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-bar-right">
+                <a href="tel:+918130030220" class="top-bar-item" id="top-phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    <span>+91 8130030220</span>
+                </a>
+                <a href="mailto:bd@transdica.com" class="top-bar-item" id="top-email">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="16" x="2" y="4" rx="2" />
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                    <span>bd@transdica.com</span>
+                </a>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+                        id="social-linkedin">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor"
+                                d="M19 0H5C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM8 19H5V8h3v11zM6.5 6.5C5.7 6.5 5 5.8 5 5s.7-1.5 1.5-1.5S8 4.2 8 5s-.7 1.5-1.5 1.5zM19 19h-3v-5.5c0-1.3 0-3-1.8-3-1.8 0-2.1 1.4-2.1 2.9V19H9V8h3v1.5c.4-.9 1.5-1.8 3.2-1.8 3.4 0 3.8 2.2 3.8 5.1V19z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= NAVBAR ================= -->
+    <header>
+        <div class="navbar-container">
+            <nav aria-label="Main Navigationbar">
+                <a class="logo-image" href="./index.html">
+                    <img class="logo" src="./TT logo.png" alt="Transdical Technologies Pvt. Ltd. Logo">
+                </a>
+                <button class="menu-toggle" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="./index.html" class="nav-link">Home</a></li>
+                    <li><a href="./about.html" class="nav-link">About TDPL</a></li>
+                    <li><a href="./solutions.html" class="nav-link">Our Solutions</a></li>
+                    <li><a href="./industries.html" class="nav-link">Industries</a></li>
+                    <li><a href="./products.html" class="nav-link">Products &amp; Technology</a></li>
+                    <li><a href="./expertise.html" class="nav-link">Expertise</a></li>
+                    <li><a href="./partners.html" class="nav-link">Partners</a></li>
+                    <li><a href="./contact.html" class="nav-link active">Contact Us</a></li>
+                    <li><a href="./contact.html" class="button-contact" id="button-request-quote">Talk to an Expert</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================================================= -->
+    <!--                     HERO                          -->
+    <!-- ================================================= -->
+    <section class="contact-hero-redesign">
+        <div class="contact-hero-content">
+            <div class="breadcrumb">
+                <a href="./index.html">Home</a>
+                <span>&rsaquo;</span>
+                <span>Contact Us</span>
+            </div>
+
+            <h1>Let's Discuss Your Scientific Solution</h1>
+
+            <h3>Partnering to Solve Complex Analytical and Technical Challenges</h3>
+
+            <p>
+                Get in touch with our multidisciplinary scientific and technical team. Whether you require consultative
+                method development, specialized enzymes, laboratory instrumentation, or strategic project collaboration,
+                we are ready to assist.
+            </p>
+        </div>
+
+        <div class="contact-hero-image">
+            <img src="./lab images/contact-hero.webp" alt="Scientific Solutions and Laboratory Specialists">
+        </div>
+    </section>
+
+    <!-- ================================================= -->
+    <!--          MAIN 2-COLUMN CONTACT SECTION            -->
+    <!-- ================================================= -->
+    <section class="contact-main-wrapper" id="requirement-form-section">
+        <div class="contact-main-container">
+
+            <!-- LEFT COLUMN: Contact & Lab Details -->
+            <div class="contact-info-col">
+                <div class="contact-info-banner">
+                    <h3>Corporate &amp; Technical Operations</h3>
+                    <p>
+                        Connect directly with our scientific specialists, application chemists, and project coordinators
+                        to discuss your analytical requirements and project scope.
+                    </p>
+                </div>
+
+                <div class="contact-cards-stack">
+                    <!-- Location Card -->
+                    <div class="contact-feature-card">
+                        <div class="contact-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <div class="contact-feature-details">
+                            <h4>Registered Address</h4>
+                            <p>Transdical Technologies Pvt. Ltd. House, Sector-1, Panchkula, Haryana, India</p>
+                        </div>
+                    </div>
+
+                    <!-- Phone Card -->
+                    <div class="contact-feature-card">
+                        <div class="contact-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                        </div>
+                        <div class="contact-feature-details">
+                            <h4>Direct Phone &amp; WhatsApp</h4>
+                            <p>
+                                <a href="tel:+918130030220">+91 8130030220</a>
+                            </p>
+                            <p style="font-size: 12.5px; color: #94a3b8; margin-top: 2px;">Monday &ndash; Saturday: 9:00 AM &ndash; 6:30 PM (IST)</p>
+                        </div>
+                    </div>
+
+                    <!-- Email Card -->
+                    <div class="contact-feature-card">
+                        <div class="contact-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect width="20" height="16" x="2" y="4" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            </svg>
+                        </div>
+                        <div class="contact-feature-details">
+                            <h4>Official Email Inquiries</h4>
+                            <p>
+                                <a href="mailto:bd@transdica.com">bd@transdica.com</a>
+                            </p>
+                            <p style="font-size: 12.5px; color: #94a3b8; margin-top: 2px;">Typical response time: Within 1 business day</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: Requirement Form -->
+            <div class="contact-form-col">
+                <div class="contact-form-card">
+                    <div class="contact-form-header">
+                        <h2>Submit Your Technical Requirement</h2>
+                        <p>Fill out the parameters below and our senior scientific team will evaluate your scope and coordinate an expert discussion.</p>
+                    </div>
+
+                    <form id="theme-contact-form" action="#" method="POST">
+                        <div class="contact-form-grid">
+
+                            <!-- Row 1: Name & Org -->
+                            <div class="contact-row-2">
+                                <div class="contact-input-group">
+                                    <label for="contact-name">Your Name <span class="required">*</span></label>
+                                    <input type="text" id="contact-name" name="name" class="contact-field-control"
+                                        placeholder="Dr. / Mr. / Ms. Full Name" required>
+                                </div>
+                                <div class="contact-input-group">
+                                    <label for="contact-org">Organization / Institution <span class="required">*</span></label>
+                                    <input type="text" id="contact-org" name="organization" class="contact-field-control"
+                                        placeholder="Company / University / Lab" required>
+                                </div>
+                            </div>
+
+                            <!-- Row 2: Email & Phone -->
+                            <div class="contact-row-2">
+                                <div class="contact-input-group">
+                                    <label for="contact-email">Work Email <span class="required">*</span></label>
+                                    <input type="email" id="contact-email" name="email" class="contact-field-control"
+                                        placeholder="name@organization.com" required>
+                                </div>
+                                <div class="contact-input-group">
+                                    <label for="contact-phone">Phone / WhatsApp Number <span class="required">*</span></label>
+                                    <input type="tel" id="contact-phone" name="phone" class="contact-field-control"
+                                        placeholder="+91 XXXXX XXXXX" required>
+                                </div>
+                            </div>
+
+                            <!-- Row 3: Industry -->
+                            <div class="contact-input-group">
+                                <label for="contact-industry">Industry / Sector</label>
+                                <select id="contact-industry" name="industry" class="contact-field-control">
+                                    <option value="" disabled selected>Select your industry / sector</option>
+                                    <option value="pharma">Pharmaceutical &amp; API</option>
+                                    <option value="biologics">Biologics &amp; Biotechnology</option>
+                                    <option value="food">Food &amp; Nutraceuticals</option>
+                                    <option value="formulation">Formulation &amp; R&amp;D</option>
+                                    <option value="textiles">Textile &amp; Advanced Materials</option>
+                                    <option value="academia">Research &amp; Academic Institutions</option>
+                                    <option value="vendor">Technology Vendor / Partner</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <!-- Row 4: Areas of Interest -->
+                            <div class="contact-input-group">
+                                <label>Areas of Interest / Support Required</label>
+                                <div class="contact-services-grid">
+                                    <label class="service-check-item">
+                                        <input type="checkbox" name="services" value="Analytical Solutions">
+                                        <span>Analytical Solutions</span>
+                                    </label>
+                                    <label class="service-check-item">
+                                        <input type="checkbox" name="services" value="Project & Expert Support">
+                                        <span>Project &amp; Expert Support</span>
+                                    </label>
+                                    <label class="service-check-item">
+                                        <input type="checkbox" name="services" value="Specialized Enzymes & Reagents">
+                                        <span>Specialized Enzymes</span>
+                                    </label>
+                                    <label class="service-check-item">
+                                        <input type="checkbox" name="services" value="Laboratory Instruments">
+                                        <span>Laboratory Instruments</span>
+                                    </label>
+                                    <label class="service-check-item">
+                                        <input type="checkbox" name="services" value="Laboratory Consumables">
+                                        <span>Consumables &amp; Standards</span>
+                                    </label>
+                                    <label class="service-check-item">
+                                        <input type="checkbox" name="services" value="Calibration & Maintenance">
+                                        <span>Calibration &amp; Maintenance</span>
+                                    </label>
+                                    <label class="service-check-item">
+                                        <input type="checkbox" name="services" value="Strategic Partnership">
+                                        <span>Strategic Partnership</span>
+                                    </label>
+                                    <label class="service-check-item">
+                                        <input type="checkbox" name="services" value="Other">
+                                        <span>Other Inquiry</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Row 5: Description -->
+                            <div class="contact-input-group">
+                                <label for="contact-description">Describe Your Requirement / Parameters</label>
+                                <textarea id="contact-description" name="description" class="contact-field-control" rows="4"
+                                    placeholder="Briefly describe your application, target analytes, instrument platform, or specific scientific challenge..."></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn-submit-theme" id="btn-submit-theme">
+                                Submit Scientific Inquiry &rarr;
+                            </button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM GUARANTEES -->
+        <div class="contact-main-container">
+            <div class="contact-guarantee-strip" style="grid-column: 1 / -1; width: 100%;">
+                <div class="guarantee-item">
+                    <div class="guarantee-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <rect width="18" height="18" x="3" y="3" rx="2" />
+                            <path d="M7 10.5V7a5 5 0 0 1 10 0v3.5" />
+                        </svg>
+                    </div>
+                    <h5>Strict Confidentiality</h5>
+                    <p>Protected by comprehensive Non-Disclosure Agreements (NDA) and secure data management.</p>
+                </div>
+
+                <div class="guarantee-item">
+                    <div class="guarantee-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                    </div>
+                    <h5>Rapid Technical Review</h5>
+                    <p>Evaluation by senior domain specialists with initial scoping within 1 business day.</p>
+                </div>
+
+                <div class="guarantee-item">
+                    <div class="guarantee-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h5>Tailored Solutions</h5>
+                    <p>Custom-engineered method protocols, platform configurations, and dedicated technical advisory.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================= -->
+    <!--                     FOOTER                        -->
+    <!-- ================================================= -->
+    <footer>
+        <div class="footer-container">
+            <!-- Column 1: Brand Info -->
+            <div class="footer-col footer-brand-col">
+                <img class="footer-logo" src="./TT logo white.png" alt="Transdical Technologies Pvt. Ltd. Logo">
+                <p class="footer-desc">
+                    TDPL provides integrated scientific, analytical and laboratory solutions through expertise, technology, specialized products and strategic collaborations.
+                </p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path d="M19 0H5C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM8 19H5V8h3v11zM6.5 6.5C5.7 6.5 5 5.8 5 5s.7-1.5 1.5-1.5S8 4.2 8 5s-.7 1.5-1.5 1.5zM19 19h-3v-5.5c0-1.3 0-3-1.8-3-1.8 0-2.1 1.4-2.1 2.9V19H9V8h3v1.5c.4-.9 1.5-1.8 3.2-1.8 3.4 0 3.8 2.2 3.8 5.1V19z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col">
+                <h3 class="footer-heading">Company</h3>
+                <ul class="footer-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About TDPL</a></li>
+                    <li><a href="./solutions.html">Our Solutions</a></li>
+                    <li><a href="./industries.html">Industries</a></li>
+                    <li><a href="./products.html">Products &amp; Technology</a></li>
+                    <li><a href="./expertise.html">Expertise</a></li>
+                    <li><a href="./partners.html">Partners</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Solutions -->
+            <div class="footer-col">
+                <h3 class="footer-heading">Our Solutions</h3>
+                <ul class="footer-links">
+                    <li><a href="./solutions.html#analytical-solutions">Analytical &amp; Scientific Solutions</a></li>
+                    <li><a href="./solutions.html#project-support">Project &amp; Expert Support</a></li>
+                    <li><a href="./solutions.html#enzymes-reagents">Specialized Enzymes &amp; Reagents</a></li>
+                    <li><a href="./solutions.html#instruments-technology">Laboratory Instruments &amp; Tech</a></li>
+                    <li><a href="./solutions.html#laboratory-consumables">Consumables &amp; Supplies</a></li>
+                    <li><a href="./solutions.html#calibration-maintenance">Calibration &amp; Maintenance</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact info -->
+            <div class="footer-col">
+                <h3 class="footer-contact-heading">Contact Us</h3>
+                <p class="footer-text">Transdical Technologies Pvt. Ltd. House, Sector-1, Panchkula, Haryana, India</p>
+                <p class="footer-text">
+                    <a href="mailto:bd@transdica.com" style="color: inherit; text-decoration: none;">bd@transdica.com</a>
+                </p>
+                <p class="footer-text">
+                    <a href="tel:+918130030220" style="color: inherit; text-decoration: none;">+91 8130030220</a>
+                </p>
+                <div style="margin-top: 10px;">
+                    <a href="./contact.html" class="footer-consult-btn">Talk to an Expert &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Transdical Technologies Pvt. Ltd. (TTPL). All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
+    <a href="https://wa.me/918130030220?text=Hello%20TDPL%20Team%2C%20I%20would%20like%20to%20discuss%20a%20scientific%20solution."
+        class="whatsapp-float-btn" target="_blank" rel="noopener noreferrer" aria-label="Discuss on WhatsApp"
+        id="floating-whatsapp-btn">
+        <svg viewBox="0 0 24 24">
             <path
-              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-          </svg>
-          <span>+91 8130030220</span>
-        </a>
-        <a href="mailto:bd@transdica.com" class="top-bar-item" id="top-email">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <rect width="20" height="16" x="2" y="4" rx="2" />
-            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-          </svg>
-          <span>bd@transdica.com</span>
-        </a>
-        <div class="social-links">
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
-            id="social-linkedin">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path fill="currentColor"
-                d="M19 0H5C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM8 19H5V8h3v11zM6.5 6.5C5.7 6.5 5 5.8 5 5s.7-1.5 1.5-1.5S8 4.2 8 5s-.7 1.5-1.5 1.5zM19 19h-3v-5.5c0-1.3 0-3-1.8-3-1.8 0-2.1 1.4-2.1 2.9V19H9V8h3v1.5c.4-.9 1.5-1.8 3.2-1.8 3.4 0 3.8 2.2 3.8 5.1V19z" />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= NAVBAR ================= -->
-  <header>
-    <div class="navbar-container">
-      <nav aria-label="Main Navigationbar">
-        <a class="logo-image" href="./index.html">
-          <img class="logo" src="./TT logo.png" alt="Transdical Technologies Pvt. Ltd. Logo">
-        </a>
-        <button class="menu-toggle" aria-label="Toggle Navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <ul>
-          <li><a href="./index.html" class="nav-link">Home</a></li>
-          <li><a href="./about.html" class="nav-link">About Us</a></li>
-          <li><a href="./testing.html" class="nav-link">Tasks / Testing</a></li>
-          <li><a href="./solutions.html" class="nav-link">Our Solutions</a></li>
-          <li><a href="./industries.html" class="nav-link">Industries</a></li>
-          <li><a href="./contact.html" class="nav-link active">Contact Us</a></li>
-          <li><a href="./contact.html" class="button-contact" id="button-request-quote">Request a Quote</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- ================================================= -->
-  <!--                     HERO                          -->
-  <!-- ================================================= -->
-  <section class="contact-hero-redesign">
-    <div class="contact-hero-content">
-      <div class="breadcrumb">
-        <a href="./index.html">Home</a>
-        <span>&rsaquo;</span>
-        <span>Contact Us</span>
-      </div>
-
-      <h1>Contact Transdical Technologies Pvt. Ltd.</h1>
-
-      <h3>Precision in Every Test. Confidence in Every Result.</h3>
-
-      <p>
-        Get in touch with our team of testing specialists and analytical chemists. We are ready to assist with your
-        regulatory compliance, routine testing, and customized method development needs.
-      </p>
-    </div>
-
-    <div class="contact-hero-image">
-      <img src="./lab images/contact-hero.webp" alt="Analytical Testing Laboratory Team">
-    </div>
-  </section>
-
-  <!-- ================================================= -->
-  <!--          MAIN 2-COLUMN CONTACT SECTION            -->
-  <!-- ================================================= -->
-  <section class="contact-main-wrapper" id="requirement-form-section">
-    <div class="contact-main-container">
-
-      <!-- LEFT COLUMN: Contact & Lab Details -->
-      <div class="contact-info-col">
-        <div class="contact-info-banner">
-          <h3>Laboratory Headquarters</h3>
-          <p>Visit our analytical testing facility or connect with our customer support desk for test inquiries and
-            sample logistics.</p>
-        </div>
-
-        <div class="contact-cards-stack">
-          <!-- Location Card -->
-          <div class="contact-feature-card">
-            <div class="contact-feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-                <circle cx="12" cy="10" r="3" />
-              </svg>
-            </div>
-            <div class="contact-feature-details">
-              <h4>Registered Address</h4>
-              <p>Transdical Technologies Pvt. Ltd. House, Sector-1, Panchkula, Haryana, India</p>
-            </div>
-          </div>
-
-          <!-- Phone Card -->
-          <div class="contact-feature-card">
-            <div class="contact-feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path
-                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-              </svg>
-            </div>
-            <div class="contact-feature-details">
-              <h4>Direct Phone & WhatsApp</h4>
-              <p>
-                <a href="tel:+918130030220">+91 8130030220</a>
-              </p>
-              <p style="font-size: 12.5px; color: #94a3b8; margin-top: 2px;">Monday – Saturday: 9:00 AM – 6:30 PM (IST)
-              </p>
-            </div>
-          </div>
-
-          <!-- Email Card -->
-          <div class="contact-feature-card">
-            <div class="contact-feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <rect width="20" height="16" x="2" y="4" rx="2" />
-                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-              </svg>
-            </div>
-            <div class="contact-feature-details">
-              <h4>Official Email Inquiries</h4>
-              <p>
-                <a href="mailto:bd@transdica.com">bd@transdica.com</a>
-              </p>
-              <p style="font-size: 12.5px; color: #94a3b8; margin-top: 2px;">Typical response time: Within 1 business
-                day</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- RIGHT COLUMN: Requirement Form -->
-      <div class="contact-form-col">
-        <div class="contact-form-card">
-          <div class="contact-form-header">
-            <h2>Send Us Your Requirement</h2>
-            <p>Fill out the form below and our testing laboratory team will provide sample submission guidance and a
-              detailed quotation.</p>
-          </div>
-
-          <form id="theme-contact-form" action="#" method="POST">
-            <div class="contact-form-grid">
-
-              <!-- Row 1: Name & Org -->
-              <div class="contact-row-2">
-                <div class="contact-input-group">
-                  <label for="contact-name">Your Name <span class="required">*</span></label>
-                  <input type="text" id="contact-name" name="name" class="contact-field-control"
-                    placeholder="Dr. Ramesh Kumar" required>
-                </div>
-                <div class="contact-input-group">
-                  <label for="contact-org">Organization / Institution <span class="required">*</span></label>
-                  <input type="text" id="contact-org" name="organization" class="contact-field-control"
-                    placeholder="Your Institution / Company" required>
-                </div>
-              </div>
-
-              <!-- Row 2: Email & Phone -->
-              <div class="contact-row-2">
-                <div class="contact-input-group">
-                  <label for="contact-email">Email Address <span class="required">*</span></label>
-                  <input type="email" id="contact-email" name="email" class="contact-field-control"
-                    placeholder="your@email.com" required>
-                </div>
-                <div class="contact-input-group">
-                  <label for="contact-phone">Phone Number <span class="required">*</span></label>
-                  <input type="tel" id="contact-phone" name="phone" class="contact-field-control"
-                    placeholder="+91 XXXXX XXXXX" required>
-                </div>
-              </div>
-
-              <!-- Row 3: Industry -->
-              <div class="contact-input-group">
-                <label for="contact-industry">Industry / Sector</label>
-                <select id="contact-industry" name="industry" class="contact-field-control">
-                  <option value="" disabled selected>Select your industry</option>
-                  <option value="food">Food & Agriculture</option>
-                  <option value="pharma">Pharmaceuticals & Biotechnology</option>
-                  <option value="leather">Leather & Footwear</option>
-                  <option value="textiles">Textiles & Apparel</option>
-                  <option value="environmental">Environmental & Water Testing</option>
-                  <option value="chemicals">Chemicals & Petrochemicals</option>
-                  <option value="cosmetics">Cosmetics & Personal Care</option>
-                  <option value="academia">Research & Academia</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-
-              <!-- Row 4: Services Needed -->
-              <div class="contact-input-group">
-                <label>What Do You Need Help With?</label>
-                <div class="contact-services-grid">
-                  <label class="service-check-item">
-                    <input type="checkbox" name="services" value="Analytical Solution">
-                    <span>Analytical Solution</span>
-                  </label>
-                  <label class="service-check-item">
-                    <input type="checkbox" name="services" value="Project Support">
-                    <span>Project Support</span>
-                  </label>
-                  <label class="service-check-item">
-                    <input type="checkbox" name="services" value="Expert Consultation">
-                    <span>Expert Consultation</span>
-                  </label>
-                  <label class="service-check-item">
-                    <input type="checkbox" name="services" value="Enzymes & Reagents">
-                    <span>Enzymes & Reagents</span>
-                  </label>
-                  <label class="service-check-item">
-                    <input type="checkbox" name="services" value="Instruments">
-                    <span>Instruments</span>
-                  </label>
-                  <label class="service-check-item">
-                    <input type="checkbox" name="services" value="Consumables">
-                    <span>Consumables</span>
-                  </label>
-                  <label class="service-check-item">
-                    <input type="checkbox" name="services" value="Calibration">
-                    <span>Calibration</span>
-                  </label>
-                  <label class="service-check-item">
-                    <input type="checkbox" name="services" value="Maintenance">
-                    <span>Maintenance</span>
-                  </label>
-                  <label class="service-check-item">
-                    <input type="checkbox" name="services" value="Other">
-                    <span>Other</span>
-                  </label>
-                </div>
-              </div>
-
-              <!-- Row 5: Description -->
-              <div class="contact-input-group">
-                <label for="contact-description">Describe Your Requirement / Parameters</label>
-                <textarea id="contact-description" name="description" class="contact-field-control" rows="4"
-                  placeholder="Briefly describe your sample matrix, target analytes, standards, or specific testing goals..."></textarea>
-              </div>
-
-              <!-- Submit Button -->
-              <button type="submit" class="btn-submit-theme" id="btn-submit-theme">
-                Submit Your Requirement &rarr;
-              </button>
-
-            </div>
-          </form>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- BOTTOM GUARANTEES -->
-    <div class="contact-main-container">
-      <div class="contact-guarantee-strip" style="grid-column: 1 / -1; width: 100%;">
-
-
-        <div class="guarantee-item">
-          <div class="guarantee-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10" />
-              <polyline points="12 6 12 12 16 14" />
-            </svg>
-          </div>
-          <h5>Rapid Turnaround Time</h5>
-          <p>LIMS automated sample tracking with fast report generation.</p>
-        </div>
-
-        <div class="guarantee-item">
-          <div class="guarantee-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <rect width="18" height="18" x="3" y="3" rx="2" />
-              <path d="M7 10.5V7a5 5 0 0 1 10 0v3.5" />
-            </svg>
-          </div>
-          <h5>Confidentiality Assured</h5>
-          <p>Guaranteed data privacy & comprehensive NDA protection.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================================================= -->
-  <!--                     FOOTER                        -->
-  <!-- ================================================= -->
-  <!-- ================================================= -->
-  <!--                     FOOTER                        -->
-  <!-- ================================================= -->
-  <footer>
-    <div class="footer-container">
-      <!-- column 1 image and slogan -->
-      <div class="footer-col">
-        <img class="footer-logo" src="./TT logo white.png" alt="Transdical Logo">
-        <p class="footer-slogan">Precision in Every Test.<br /> Confidence in Every Result.</p>
-
-        <div class="footer-social">
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-              <path
-                d="M19 0H5C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM8 19H5V8h3v11zM6.5 6.5C5.7 6.5 5 5.8 5 5s.7-1.5 1.5-1.5S8 4.2 8 5s-.7 1.5-1.5 1.5zM19 19h-3v-5.5c0-1.3 0-3-1.8-3-1.8 0-2.1 1.4-2.1 2.9V19H9V8h3v1.5c.4-.9 1.5-1.8 3.2-1.8 3.4 0 3.8 2.2 3.8 5.1V19z" />
-            </svg>
-          </a>
-        </div>
-      </div>
-
-      <!-- column 2 quick links -->
-      <div class="footer-col">
-        <h3 class="footer-heading">Quick Links</h3>
-        <ul class="footer-links">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About Us</a></li>
-          <li><a href="./testing.html">Tasks / Testing</a></li>
-          <li><a href="./solutions.html">Our Solutions</a></li>
-          <li><a href="./industries.html">Industries</a></li>
-          <li><a href="./contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-
-      <!-- column 3 our services -->
-      <div class="footer-col">
-        <h3 class="footer-heading">Our Testing Services</h3>
-        <ul class="footer-links">
-          <li><a href="./testing.html">Food Testing</a></li>
-          <li><a href="./testing.html">Drug Testing</a></li>
-          <li><a href="./testing.html">Pharmaceutical Testing</a></li>
-          <li><a href="./testing.html">Leather Testing</a></li>
-          <li><a href="./testing.html">Textile Testing</a></li>
-          <li><a href="./testing.html">Environmental Testing</a></li>
-        </ul>
-      </div>
-
-      <!-- column 4 contact & accreditations -->
-      <div class="footer-col">
-        <h3 class="footer-contact-heading">Contact Info & Headquarters</h3>
-        <p class="footer-text">Transdical Technologies Pvt. Ltd. House, Sector-1, Panchkula, Haryana, India</p>
-        <p class="footer-text"><a href="mailto:bd@transdica.com"
-            style="color: inherit; text-decoration: none;">bd@transdica.com</a></p>
-        <p class="footer-text"><a href="tel:+918130030220" style="color: inherit; text-decoration: none;">+91 8130030220</a></p>
-      </div>
-    </div>
-
-    <!-- copyright -->
-    <div class="footer-bottom">
-      <p>&copy; 2026 Transdical Technologies Pvt. Ltd. All Rights Reserved.</p>
-    </div>
-  </footer>
-
-  <!-- Submission Feedback & WhatsApp Popup Modal -->
-  <div id="form-feedback-modal" class="query-feedback-modal">
-    <div class="query-modal-card">
-      <div class="query-modal-icon-wrap">
-        <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="2.5"
-          stroke-linecap="round" stroke-linejoin="round">
-          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-          <polyline points="22 4 12 14.01 9 11.01" />
-        </svg>
-      </div>
-
-      <h3 class="query-modal-title" id="feedback-title">Requirement Sent Successfully!</h3>
-      <div class="query-modal-desc" id="feedback-msg">
-        Your requirement details have been directly sent to our official laboratory email <strong
-          style="color: #0d9488;">bd@transdica.com</strong>.
-      </div>
-
-      <!-- Fast-track WhatsApp Option Box -->
-      <div class="query-whatsapp-box">
-        <div class="query-whatsapp-box-header">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-          </svg>
-          <span>Need Faster Response? Connect on WhatsApp</span>
-        </div>
-        <p class="query-whatsapp-box-text">
-          Want immediate sample submission guidance or quote confirmation? Send your query details directly to our lab
-          specialist on WhatsApp:
-        </p>
-
-        <!-- Action: Send on WhatsApp & Close -->
-        <div class="query-modal-actions">
-          <a id="btn-whatsapp-send-contact" href="https://wa.me/918130030220" target="_blank" rel="noopener noreferrer"
-            class="query-btn-whatsapp">
-            <svg viewBox="0 0 24 24">
-              <path
                 d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
-            </svg>
-            <span>Send on WhatsApp & Close</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+        </svg>
+        <span>Discuss on WhatsApp</span>
+    </a>
 
-  <!-- Interactive Submission Handler with WhatsApp Redirect Option -->
-  <script>
-    (function () {
-      const TARGET_EMAIL = 'bd@transdica.com';
-      const WHATSAPP_PHONE = '918130030220';
+    <!-- Mobile Menu Navigation Toggle Script -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navUl = document.querySelector('header nav ul');
 
-      const form = document.getElementById('theme-contact-form');
-      const submitBtn = document.getElementById('btn-submit-theme');
-      const modal = document.getElementById('form-feedback-modal');
-      const feedbackMsg = document.getElementById('feedback-msg');
-      const whatsappBtn = document.getElementById('btn-whatsapp-send-contact');
-
-      function hideModal() {
-        if (modal) {
-          modal.classList.remove('show');
-          setTimeout(function () { modal.style.display = 'none'; }, 250);
-        }
-      }
-
-      function showModal() {
-        if (modal) {
-          modal.style.display = 'flex';
-          void modal.offsetWidth;
-          modal.classList.add('show');
-        }
-      }
-
-      if (whatsappBtn) {
-        whatsappBtn.addEventListener('click', function () {
-          setTimeout(hideModal, 250);
+        menuToggle.addEventListener('click', function () {
+            menuToggle.classList.toggle('active');
+            navUl.classList.toggle('active');
         });
-      }
 
-      if (modal) {
-        modal.addEventListener('click', function (e) {
-          if (e.target === modal) hideModal();
+        document.addEventListener('click', function (e) {
+            if (!navUl.contains(e.target) && !menuToggle.contains(e.target)) {
+                menuToggle.classList.remove('active');
+                navUl.classList.remove('active');
+            }
         });
-      }
 
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && modal && modal.classList.contains('show')) {
-          hideModal();
-        }
-      });
-
-      if (form) {
-        form.addEventListener('submit', function (e) {
-          e.preventDefault();
-
-          const name = document.getElementById('contact-name').value.trim();
-          const organization = document.getElementById('contact-org').value.trim();
-          const email = document.getElementById('contact-email').value.trim();
-          const phone = document.getElementById('contact-phone').value.trim();
-          const industry = document.getElementById('contact-industry') ? document.getElementById('contact-industry').value : '';
-          const description = document.getElementById('contact-description') ? document.getElementById('contact-description').value.trim() : '';
-
-          // Collect selected services
-          const checkedServices = [];
-          document.querySelectorAll('input[name="services"]:checked').forEach(function (cb) {
-            checkedServices.push(cb.value);
-          });
-          const servicesStr = checkedServices.length > 0 ? checkedServices.join(', ') : 'None selected';
-
-          // Format WhatsApp message with user query details
-          let waMessage = `Hello Transdical Laboratory Team,\n\nI have submitted a testing inquiry on your website:\n• Name: ${name}\n• Organization: ${organization}\n• Email: ${email}\n• Phone: ${phone}`;
-          if (industry) waMessage += `\n• Industry: ${industry}`;
-          if (servicesStr && servicesStr !== 'None selected') waMessage += `\n• Services Needed: ${servicesStr}`;
-          if (description) waMessage += `\n• Requirements: ${description}`;
-
-          if (whatsappBtn) {
-            whatsappBtn.href = 'https://wa.me/' + WHATSAPP_PHONE + '?text=' + encodeURIComponent(waMessage);
-          }
-
-          const originalBtnText = submitBtn.innerHTML;
-          submitBtn.disabled = true;
-          submitBtn.innerHTML = 'Sending Requirement to ' + TARGET_EMAIL + '...';
-
-          const formDataPayload = {
-            name: name,
-            organization: organization,
-            email: email,
-            phone: phone,
-            industry: industry,
-            services: servicesStr,
-            description: description,
-            _subject: `New Laboratory Requirement: ${name} (${organization})`,
-            _replyto: email,
-            _template: 'table',
-            _captcha: 'false'
-          };
-
-          // Send email directly to bd@transdica.com via FormSubmit AJAX
-          fetch('https://formsubmit.co/ajax/' + TARGET_EMAIL, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'Accept': 'application/json'
-            },
-            body: JSON.stringify(formDataPayload)
-          })
-            .then(function (response) {
-              return response.json();
-            })
-            .then(function (data) {
-              feedbackMsg.innerHTML = 'Thank you, <strong>' + name + '</strong>!<br>Your requirement details have been submitted and sent to our official email: <strong style="color: #0d9488;">' + TARGET_EMAIL + '</strong>.<br><br>A confirmation has been recorded for <strong>' + email + '</strong>.';
-              showModal();
-              form.reset();
-            })
-            .catch(function (error) {
-              // Graceful fallback display
-              feedbackMsg.innerHTML = 'Thank you, <strong>' + name + '</strong>!<br>Your requirement details have been forwarded to <strong style="color: #0d9488;">' + TARGET_EMAIL + '</strong>.<br><br>Our laboratory testing team will review your specifications shortly.';
-              showModal();
-              form.reset();
-            })
-            .finally(function () {
-              submitBtn.disabled = false;
-              submitBtn.innerHTML = originalBtnText;
+        navUl.querySelectorAll('a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                menuToggle.classList.remove('active');
+                navUl.classList.remove('active');
             });
         });
-      }
-    })();
-  </script>
-
-  <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
-  <a href="https://wa.me/918130030220?text=Hello%20Transdical%20Laboratory%20Team%2C%20I%20would%20like%20to%20book%20a%20test."
-    class="whatsapp-float-btn" target="_blank" rel="noopener noreferrer" aria-label="Book a Test on WhatsApp"
-    id="floating-whatsapp-btn">
-    <svg viewBox="0 0 24 24">
-      <path
-        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
-    </svg>
-    <span>Book a Test</span>
-  </a>
-
-  <!-- Mobile Menu Navigation Toggle Script -->
-  <script>
-    (function () {
-      function initMobileMenu() {
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navUl = document.querySelector('nav ul');
-        if (!menuToggle || !navUl) return;
-
-        menuToggle.addEventListener('click', function (e) {
-          e.stopPropagation();
-          menuToggle.classList.toggle('active');
-          navUl.classList.toggle('active');
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener('click', function (e) {
-          if (!navUl.contains(e.target) && !menuToggle.contains(e.target)) {
-            menuToggle.classList.remove('active');
-            navUl.classList.remove('active');
-          }
-        });
-
-        // Close menu when link is clicked
-        navUl.querySelectorAll('a').forEach(function (link) {
-          link.addEventListener('click', function () {
-            menuToggle.classList.remove('active');
-            navUl.classList.remove('active');
-          });
-        });
-      }
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initMobileMenu);
-      } else {
-        initMobileMenu();
-      }
-    })();
-  </script>
+    </script>
 </body>
 
 </html>
