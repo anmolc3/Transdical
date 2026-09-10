@@ -82,7 +82,7 @@
     <link rel="shortcut icon" href="./TT favicon/favicon.ico">
     <link rel="manifest" href="./TT favicon/site.webmanifest">
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css?v=2.0">
 </head>
 
 <body>
@@ -524,6 +524,142 @@
     </a>
 
     <!-- ================= SUBMISSION CONFIRMATION POPUP MODAL ================= -->
+    <style>
+        .query-feedback-modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 999999;
+            background: rgba(15, 23, 42, 0.78);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.28s ease;
+            box-sizing: border-box;
+        }
+        .query-feedback-modal.show {
+            display: flex !important;
+            opacity: 1 !important;
+        }
+        .query-modal-card {
+            background: #ffffff;
+            max-width: 500px;
+            width: 100%;
+            border-radius: 22px;
+            padding: 34px 28px 28px;
+            box-shadow: 0 25px 60px -15px rgba(15, 23, 42, 0.45), 0 0 0 1px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            position: relative;
+            transform: scale(0.92);
+            transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+            font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+            box-sizing: border-box;
+        }
+        .query-feedback-modal.show .query-modal-card {
+            transform: scale(1);
+        }
+        .query-modal-close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            border: none;
+            background: #f1f5f9;
+            color: #64748b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 22px;
+            line-height: 1;
+        }
+        .query-modal-close:hover {
+            background: #e2e8f0;
+            color: #0f172a;
+            transform: rotate(90deg);
+        }
+        .query-modal-icon-wrap {
+            width: 66px;
+            height: 66px;
+            margin: 0 auto 16px;
+            border-radius: 50%;
+            background: #ecfdf5;
+            color: #10b981;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 0 8px rgba(16, 185, 129, 0.1);
+        }
+        .query-modal-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 0 0 10px 0;
+            line-height: 1.3;
+        }
+        .query-modal-desc {
+            font-size: 14.5px;
+            color: #475569;
+            line-height: 1.6;
+            margin: 0 0 20px 0;
+        }
+        .query-whatsapp-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: 14px;
+            padding: 16px;
+            text-align: left;
+            margin-bottom: 8px;
+        }
+        .query-whatsapp-box-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13.5px;
+            font-weight: 700;
+            color: #15803d;
+            margin-bottom: 6px;
+        }
+        .query-whatsapp-box-text {
+            font-size: 12.5px;
+            color: #166534;
+            margin: 0 0 12px 0;
+            line-height: 1.45;
+        }
+        .query-btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: #25d366;
+            color: #ffffff !important;
+            padding: 10px 20px;
+            border-radius: 999px;
+            font-size: 13.5px;
+            font-weight: 600;
+            text-decoration: none;
+            width: 100%;
+            box-sizing: border-box;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.28);
+            transition: all 0.2s ease;
+        }
+        .query-btn-whatsapp:hover {
+            background: #1ebc59;
+            transform: translateY(-1px);
+        }
+        .query-btn-whatsapp svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+    </style>
+
     <div id="query-feedback-modal" class="query-feedback-modal" role="dialog" aria-modal="true" aria-labelledby="query-modal-title">
         <div class="query-modal-card">
             <button type="button" class="query-modal-close" id="query-modal-close-btn" aria-label="Close popup">&times;</button>
@@ -567,65 +703,108 @@
         </div>
     </div>
 
-    <!-- Mobile Menu Navigation Toggle Script -->
+    <!-- Scripts -->
     <script>
+        // Header 09 Mobile Menu Support
+        const nav09Toggle = document.getElementById('nav-09-toggle');
+        if (nav09Toggle) {
+            document.querySelectorAll('.nav-09__mobile-menu a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    nav09Toggle.checked = false;
+                });
+            });
+        }
+
+        // Safe fallback for legacy menu-toggle if present
         const menuToggle = document.querySelector('.menu-toggle');
         const navUl = document.querySelector('header nav ul');
-
-        menuToggle.addEventListener('click', function () {
-            menuToggle.classList.toggle('active');
-            navUl.classList.toggle('active');
-        });
-
-        document.addEventListener('click', function (e) {
-            if (!navUl.contains(e.target) && !menuToggle.contains(e.target)) {
-                menuToggle.classList.remove('active');
-                navUl.classList.remove('active');
-            }
-        });
-
-        navUl.querySelectorAll('a').forEach(function (link) {
-            link.addEventListener('click', function () {
-                menuToggle.classList.remove('active');
-                navUl.classList.remove('active');
+        if (menuToggle && navUl) {
+            menuToggle.addEventListener('click', function () {
+                menuToggle.classList.toggle('active');
+                navUl.classList.toggle('active');
             });
-        });
+
+            document.addEventListener('click', function (e) {
+                if (!navUl.contains(e.target) && !menuToggle.contains(e.target)) {
+                    menuToggle.classList.remove('active');
+                    navUl.classList.remove('active');
+                }
+            });
+
+            navUl.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    menuToggle.classList.remove('active');
+                    navUl.classList.remove('active');
+                });
+            });
+        }
 
         // Auto-select checkboxes based on URL parameter ?interest=...
-        window.addEventListener('DOMContentLoaded', () => {
+        (function() {
             const params = new URLSearchParams(window.location.search);
             const interest = params.get('interest');
             const descField = document.getElementById('contact-description');
 
             if (interest) {
-                if (interest.toLowerCase().includes('lc-ms') || interest === 'lcms') {
+                const lower = interest.toLowerCase();
+                if (lower.includes('lc-ms') || lower === 'lcms') {
                     const cb = document.getElementById('check-lcms');
                     if (cb) cb.checked = true;
                     if (descField && !descField.value) {
                         descField.value = "Inquiry regarding LC-MS/MS analytical solutions / method development / trace impurity profiling.";
                     }
-                } else if (interest.toLowerCase().includes('gc-ms') || interest === 'gcms') {
+                } else if (lower.includes('gc-ms') || lower === 'gcms') {
                     const cb = document.getElementById('check-gcms');
                     if (cb) cb.checked = true;
                     if (descField && !descField.value) {
                         descField.value = "Inquiry regarding GC-MS/MS volatile impurity analysis / USP <467> residual solvents / pesticide screening.";
                     }
-                } else if (interest.toLowerCase().includes('method') || interest === 'validation') {
+                } else if (lower.includes('method') || lower === 'validation') {
                     const cb = document.getElementById('check-method');
                     if (cb) cb.checked = true;
                     if (descField && !descField.value) {
                         descField.value = "Inquiry regarding analytical method development & ICH Q2(R2) validation lifecycle support.";
                     }
-                } else if (interest.toLowerCase().includes('enzyme')) {
+                } else if (lower.includes('enzyme')) {
                     const cb = document.getElementById('check-enzymes');
                     if (cb) cb.checked = true;
-                } else if (interest.toLowerCase().includes('instrument')) {
+                } else if (lower.includes('instrument')) {
                     const cb = document.getElementById('check-instruments');
                     if (cb) cb.checked = true;
-                } else if (interest.toLowerCase().includes('consumable')) {
+                } else if (lower.includes('consumable')) {
                     const cb = document.getElementById('check-consumables');
                     if (cb) cb.checked = true;
                 }
+            }
+        })();
+
+        // Modal Close Handlers
+        const feedbackModal = document.getElementById('query-feedback-modal');
+        const closeModalBtn = document.getElementById('query-modal-close-btn');
+        const doneModalBtn = document.getElementById('query-modal-done-btn');
+
+        function hideFeedbackModal() {
+            if (feedbackModal) {
+                feedbackModal.classList.remove('show');
+                feedbackModal.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+        }
+
+        if (closeModalBtn) closeModalBtn.addEventListener('click', hideFeedbackModal);
+        if (doneModalBtn) doneModalBtn.addEventListener('click', hideFeedbackModal);
+
+        if (feedbackModal) {
+            feedbackModal.addEventListener('click', function (e) {
+                if (e.target === feedbackModal) {
+                    hideFeedbackModal();
+                }
+            });
+        }
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && feedbackModal && (feedbackModal.classList.contains('show') || feedbackModal.style.display === 'flex')) {
+                hideFeedbackModal();
             }
         });
 
@@ -654,14 +833,14 @@
                     "_captcha": "false"
                 };
 
-                // ── STEP 1: Show popup modal IMMEDIATELY (no API wait) ──
-                var feedbackModal = document.getElementById('query-feedback-modal');
+                // ── STEP 1: Show popup modal IMMEDIATELY ──
                 if (feedbackModal) {
                     var senderName = payload["Full Name"] ? payload["Full Name"].trim() : '';
                     var modalDesc = document.getElementById('query-modal-desc');
                     if (modalDesc && senderName) {
                         modalDesc.innerHTML = 'Thank you for reaching out, <strong>' + senderName + '</strong>. Your scientific requirement has been forwarded directly to our technical and business development team at <strong>bd@transdica.com</strong>.';
                     }
+                    feedbackModal.style.display = 'flex';
                     feedbackModal.classList.add('show');
                     document.body.style.overflow = 'hidden';
                 }
@@ -673,44 +852,13 @@
                 }
 
                 // ── STEP 3: Send email silently in background ──
-                // Works on transdica.com live site. On localhost FormSubmit may block — that's OK,
-                // the popup and success card already showed to the user above.
                 fetch("https://formsubmit.co/ajax/727c373665e06b4cf2f10544770d2728", {
                     method: "POST",
                     headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                     body: JSON.stringify(payload)
-                }).catch(function(err) { console.warn('Background email failed (localhost expected):', err); });
+                }).catch(function(err) { console.warn('Background email request status:', err); });
             });
         }
-
-        // Modal Close Handlers
-        const feedbackModal = document.getElementById('query-feedback-modal');
-        const closeModalBtn = document.getElementById('query-modal-close-btn');
-        const doneModalBtn = document.getElementById('query-modal-done-btn');
-
-        function hideFeedbackModal() {
-            if (feedbackModal) {
-                feedbackModal.classList.remove('show');
-                document.body.style.overflow = '';
-            }
-        }
-
-        if (closeModalBtn) closeModalBtn.addEventListener('click', hideFeedbackModal);
-        if (doneModalBtn) doneModalBtn.addEventListener('click', hideFeedbackModal);
-
-        if (feedbackModal) {
-            feedbackModal.addEventListener('click', function (e) {
-                if (e.target === feedbackModal) {
-                    hideFeedbackModal();
-                }
-            });
-        }
-
-        document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape' && feedbackModal && feedbackModal.classList.contains('show')) {
-                hideFeedbackModal();
-            }
-        });
     </script>
 </body>
 
